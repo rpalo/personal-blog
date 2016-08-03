@@ -1,0 +1,21 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+// Main tag setup styles
+body {
+    background: #FFF url('../img/blueprint-paper-texture.jpg') repeat top left;
+}
+
+// Header
+
+.main-header {
+    text-align: center;
+    background-color: #FFF;
+    width: 100%;
+    border-top: 3px solid #000;
+    padding: 20px;
+    box-shadow: 0 10px 10px 0;
+}
