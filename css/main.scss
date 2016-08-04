@@ -2,20 +2,101 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
-
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700);
 
 // Main tag setup styles
 body {
-    background: #FFF url('../img/blueprint-paper-texture.jpg') repeat top left;
+    font-family: 'Ubuntu Mono', monospace;
+    margin-bottom: 60px;
+}
+
+article {
+    float: right;
 }
 
 // Header
 
-.main-header {
+#main-header {
     text-align: center;
     background-color: #FFF;
     width: 100%;
     border-top: 3px solid #000;
     padding: 20px;
-    box-shadow: 0 10px 10px 0;
+}
+
+#navigation {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #006;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    border-top: 3px double black;
+    ul {
+        list-style-type: none;
+    }
+    li {
+        display: inline;
+    }
+    a {
+        transition: color 1s;
+        text-decoration: none;
+        :hover {
+            text-decoration: none;
+            color: #F33;
+            
+        }
+    }
+
+}
+
+// Footer
+#main-footer {
+    height: 60px;
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    background-color: #4d4d4d;
+    background: linear-gradient(#4d4d4d, #000);
+    color: #808080;
+    font-family: Helvetica, Verdana, sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    bottom: 0;
+
+}
+
+.right-quote {
+    text-align: right;
+}
+
+// Sidebar
+aside {
+    
+    border: 2px solid black;
+    border-radius: 10px;
+    #profile-pic {
+        text-align: center;
+        padding: 20px;
+    }
+    #author {
+        padding: 10px;
+        font-size: 14;
+    }
+    .links {
+        text-align: center;
+        td {
+            padding: 5px;
+        }
+    }
+}
+
+.circle-pic {
+    border-radius: 50%;
+}
+
+.logo {
+    width: 32px;
+    height: 32px;
 }

@@ -10,13 +10,19 @@
         
         <!-- Custom CSS -->
         <link rel="stylesheet" href="css/main.css">
+        <!-- Sloppy workaround for foldered subpages -->
+        <link rel="stylesheet" href="../css/main.css">
         
         <title>Learn by Doing</title>
     </head>
     <body>
         {% include header.html %}
-        {{content}}
-        
+        <div class="container">
+            <div class="row">
+                {{ content }}
+            </div>
+        </div>
+        {% include footer.html %}
         <!-- Scripts -->
         
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
