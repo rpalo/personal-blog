@@ -5,10 +5,12 @@ permalink: /
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
-
+  {% for post in site.posts limit:1 %}
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.content }}</p>
+  {% endfor %}
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% for post in site.posts offset:1 limit:2 %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
