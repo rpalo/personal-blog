@@ -1,15 +1,16 @@
 This week I am starting a class on algorithms (as part of the OSSU cousework).  I currently know three things.  Thing one: I am actually (pretty much) on schedule for blog posts!  Booyah for every two weeks!  It works great, because I tell myself that I'm actually going to be a go-getter and post an extra one in my off week, but by the time that I get to doing that, it's the second week and I'm just regularly on time.  So that works out.  Thing two: I have a really hard time focusing on just one thing for very long, especially when learning coding things.  Thing three: I'm trying really hard to limit the number of classes I'm doing.  Currently, I'm only working on
- - Program Design
- - Databases
- - Algorithms
- - Discrete Mathematics
+
+ * Program Design
+ * Databases
+ * Algorithms
+ * Discrete Mathematics
 
 And on the side:
 
- - Improving Ruby-ness
- - More practice with idiomatic Python
- - Wrestling Jekyll to make this blog look like how I want
- - [The in-house Django apps for work](https://github.com/rpalo/pq-portal)
+ * Improving Ruby-ness
+ * More practice with idiomatic Python
+ * Wrestling Jekyll to make this blog look like how I want
+ * [The in-house Django apps for work](https://github.com/rpalo/pq-portal)
 
 Anyways.  To what I wanted to talk about: this algorithms class!  It's really, _really_ interesting!  I think the first couple lessons are just warm-ups to get your feet wet and your mind thinking in algorithm mode, but they are still making me think really hard.  The main thing I've learned about so far is the "Dynamic Connectivity Problem."  This is the idea that, given some number of nodes, is there some _efficient_ way of checking if two are connected?  Yes.  Yes there is.
 
