@@ -16,7 +16,7 @@ Anyways.  To what I wanted to talk about: this algorithms class!  It's really, _
 
 It's called union find.  You lump all of the connected entities into a blob, and then when you connect two more entities, you combine the blobs that they are in.  Here's the basic setup:
 
-```python
+{% highlight python %}
 class UF:
 
     def __init__(self, infile):
@@ -45,11 +45,11 @@ class UF:
     def __str__(self):
         return str(self.__class__) + str(self.nodes)
 
-```
+{% endhighlight %}
 
 So essentially, we lay each node out into a single array.  Here's one way to connect them called quick-find.  It makes finding out whether or not two nodes are connected really easy, but both setup and unions are linear (N) time, meaning that if you have 10x as many inputs it will take ~10x as long to run.  I'll talk more about this N notation in a different post.  The take away is that loading is slow, but accessing is fast later.
 
-```python
+{% highlight python %}
 class QuickFindUF(UF):
     # Quick find works by making the groups into a tree
     # with a root node.  If two nodes point at a root,
@@ -72,11 +72,11 @@ class QuickFindUF(UF):
         # Simply see if the root of the nodes are the same with an array access
         return self.nodes[a] == self.nodes[b]
 
-```
+{% endhighlight %}
 
 This is great, but can we improve performance?  The next one is called Quick-Union.
 
-```python
+{% highlight python %}
 class QuickUnionUF(UF):
     # Quick Union works by simply pointing the root
     # at the new root.  Now we have a non-flat chain
@@ -108,11 +108,11 @@ class QuickUnionUF(UF):
             root = self.nodes[root]
         return root
 
-```
+{% endhighlight %}
 
 The way to fix the problems with Quick Union is to provide some weighting!  If we make sure that we always make the bigger tree the root, then we'll end up never placing an already tall tree below a smaller one.  We should have a much flatter structure.  In order to do this, we have to keep track of a size or depth for each connected blobtree.  This is just a second array that keeps track of the depth.  Since each union (by definition) makes that tree one step deeper, you just increment the size of the new root by 1!
 
-```python
+{% highlight python %}
 class WeightedQuickUnionUF(QuickUnionUF):
     # Weighted quick union UF is similar to QUUF,
     # but it attempts to flatten the trees by
@@ -143,6 +143,6 @@ class WeightedQuickUnionUF(QuickUnionUF):
         else:
             self.nodes[root_a] = root_b
             self.size[root_b] += 1
-```
+{% endhighlight %}
 
 Through some math, it turns out that this gets us from `N^2` time to setup and union things to `M*lg(N)` time, which is an awesome improvement.  I know this was kind of heavy, but I think it was good for me to do it out and explain it some.  More in the next post.

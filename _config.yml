@@ -25,6 +25,7 @@ github_username:  rpalo
 # Build settings
 markdown: kramdown
 
+
 # Other configurations
 timezone: America/Los_Angeles
 
