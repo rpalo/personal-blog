@@ -6,6 +6,7 @@ permalink: /
 <div class="home">
 
   {% for post in site.posts limit:1 %}
+    <p>{{ post.date | date: "%b %-d, %Y" }}</p>
     <h2>{{ post.title }}</h2>
     <p>{{ post.content }}</p>
   {% endfor %}
