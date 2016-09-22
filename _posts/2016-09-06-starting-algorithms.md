@@ -1,3 +1,8 @@
+---
+layout: page
+title: Starting Algorithms
+---
+
 This week I am starting a class on algorithms (as part of the OSSU cousework).  I currently know three things.  Thing one: I am actually (pretty much) on schedule for blog posts!  Booyah for every two weeks!  It works great, because I tell myself that I'm actually going to be a go-getter and post an extra one in my off week, but by the time that I get to doing that, it's the second week and I'm just regularly on time.  So that works out.  Thing two: I have a really hard time focusing on just one thing for very long, especially when learning coding things.  Thing three: I'm trying really hard to limit the number of classes I'm doing.  Currently, I'm only working on
 
  * Program Design

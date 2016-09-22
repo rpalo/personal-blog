@@ -1,3 +1,8 @@
+---
+layout: page
+title: Emacs and Dwarves
+---
+
 Two short things to write about today: Emacs and dwarves.  That's right, I finally did it.  I picked a side in the endless struggle of text editors.  Not really.  I thought it would make me a cooler programmer if I could reliably use either Emacs or Vim.  Also, due to the fact that both editors seem crazy archaic but thousands of people still use them, they have to be good somehow.  
 Anyways.  I tried using Vim first.  That lasted all of 12 seconds.  I definitely went in with the mind set that I was going to stick it out and learn, no matter how hard it was.  It wasn't that it was hard, I just think they made it too hard to do simple typing.  Someone will probably prove me wrong on that.  At least in Emacs, you push letters and letters appear on the screen, and the "save and quit" command isn't some secret hoodoo sorcery spell.
 
