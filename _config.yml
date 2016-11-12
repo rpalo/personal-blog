@@ -30,4 +30,4 @@ markdown: kramdown
 timezone: America/Los_Angeles
 
 # File Inclusions
-exclude: [README.md]
+exclude: [README.md,blog.sublime-project, blog.sublime-workspace]
