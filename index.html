@@ -10,8 +10,9 @@ permalink: /
     <h2>{{ post.title }}</h2>
     <p>{{ post.content }}</p>
   {% endfor %}
+  <h3>Recent Posts</h3>
   <ul class="post-list">
-    {% for post in site.posts offset:1 limit:2 %}
+    {% for post in site.posts offset:1 limit:3 %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
