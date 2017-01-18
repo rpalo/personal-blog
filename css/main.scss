@@ -2,118 +2,140 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
-@import 'https://fonts.googleapis.com/css?family=Cutive+Mono';
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Source+Sans+Pro');
 
-// Main tag setup styles
+/* Colors */
+
+$red-0: #AA3939;  // Main Primary color */
+$red-1: #FFEEEE;
+$red-2: #F59B9B;
+$red-3: #5F0303;
+$red-4: #140000;
+
+$yellow-0: #AAA639;  // Main Secondary color (1) */
+$yellow-1: #FFFEEE;
+$yellow-2: #F5F29B;
+$yellow-3: #5F5B03;
+$yellow-4: #141300;
+
+$blue-0: #303D74;  // Main Secondary color (2) */
+$blue-1: #DEE1EC;
+$blue-2: #717BA7;
+$blue-3: #0A1441;
+$blue-4: #00030D;
+
+/* Main */
+html {
+    box-sizing: border-box;
+    background: $blue-1;
+    font-family: "Source Sans Pro", "Verdana", "Arial", "sans-serif";
+    font-size: 20px;
+    font-weight: 200;
+}
 body {
-    font-family: 'Cutive Mono', monospace;
-    font-size: 16px;
-    
+    margin: 0;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
-.content {
-    padding-right: 20px;
+.site-wrap {
+    max-width: 1100px;
+    margin: 70px auto;
+    background: white;
+    padding: 40px;
+    text-align: justify;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.5);
+    transform: scale(0.98);
+    transition: transform 0.5s;
 }
 
-article {
-    float: right;
-    
+// Activates on scroll past header
+body.fixed-nav .site-wrap {
+    transform: scale(1);
 }
 
-.main {
-    display: block;
-    clear: both;
-    min-height: 400px;
-    margin-bottom: 60px;
-}
-
-// Header
-
-#main-header {
+header {
     text-align: center;
-    background-color: #FFF;
+    height: 50vh;
+    background: url(/img/header_bg.png) bottom center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    h1 {
+        color: white;
+        font-family: "Inconsolata", monospace;
+        font-size: 3vw;
+        text-shadow: 3px 4px 0 rgba(0,0,0,0.2);
+    }
+    .profile {
+        border-radius: 50%;
+    }
+    
+
+}
+
+
+nav {
+    background: $blue-0;
+    top: 0;
     width: 100%;
-    border-top: 3px solid #000;
+    transition: all 0.5s;
+    position: relative;
+    z-index: 1;
+}
+
+// Only occurs on scroll past header
+body.fixed-nav nav {
+    position: fixed;
+    box-shadow: 0 5px 0 rgba(0,0,0,0.1);
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li.logo {
+    max-width: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+    background-color: $yellow-1;
+}
+
+li.logo a {
+    color: $red-0;
+    font-family: "Inconsolata", "monospace";
+    text-transform: lowercase;
+    font-weight: 600;
+    font-size: 25px;
+    padding: 0px;
+}
+
+
+.fixed-nav li.logo {
+    max-width: 500px;
+}
+
+nav a {
+    text-decoration: none;
     padding: 20px;
+    display: inline-block;
+    color: $blue-1;
+    transition: all 0.2s;
+    text-transform: uppercase;
 }
 
-#navigation {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    color: #006;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    border-top: 3px double black;
-    ul {
-        list-style-type: none;
-    }
-    li {
-        display: inline;
-    }
-    a {
-        transition: color 1s;
-        text-decoration: none;
-        :hover {
-            text-decoration: none;
-            color: #F33;
-            
-        }
-    }
-
-}
-
-// Footer
-#main-footer {
-    height: 60px;
-    width: 100%;
-    padding: 10px;
-    background-color: #4d4d4d;
-    background: linear-gradient(#4d4d4d, #000);
-    color: #808080;
-    font-family: Helvetica, Verdana, sans-serif;
-    font-size: 12px;
-    letter-spacing: 1px;
-    clear: both;
-
-}
-
-.right-quote {
-    text-align: right;
-}
-
-ul {
-    list-style-type: none;
-}
-
-
-// Sidebar
-aside {
-    
-    border: 2px solid black;
-    border-radius: 10px;
-    #profile-pic {
-        text-align: center;
-        padding: 20px;
-    }
-    #author {
-        padding: 10px;
-        font-size: 14;
-    }
-    .links {
-        text-align: center;
-        td {
-            padding: 5px;
-        }
-    }
-}
-
-.circle-pic {
-    border-radius: 50%;
-}
-
-.logo {
-    width: 32px;
-    height: 32px;
-}
