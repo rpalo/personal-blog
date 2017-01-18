@@ -1,7 +1,7 @@
 ---
 layout: page
 title: To-Do List
-permalink: todo
+permalink: /todo/
 ---
 
 # To Do
