@@ -10,7 +10,7 @@ Anyways, I have been having a whole lot of success in the JavaScript world recen
 
 The very first useful thing you should know is how to get at (or create) things in the DOM.  This is something that JQuery makes really easy, but here's how to do it the rugged way.
 
-```javascript
+{% highlight javascript %}
 // I'm going to use ES6 syntax (which I'm still learning, so be gentle)
 const header = document.querySelector('h1');
 // Now you have access to everything about your header!
@@ -32,13 +32,13 @@ navArray.forEach( function(link) {
 const contentDiv = document.querySelector('#content');
 const authorName = contentDiv.querySelector('.author');
 
-```
+{% endhighlight %}
 
 ### Making Things Happen (Events)
 
 I hinted at this in the previous section.  What if you want to run some magic voodoo everytime someone mouses over your title or everytime someone submits a form?  It's really that simple.
 
-```javascript
+{% highlight javascript %}
 // Just select the element you want the event to be tied to
 const header = document.querySelector('#title');
 
@@ -59,7 +59,7 @@ header.addEventListener('mouseenter', titleGrow);
 // NOTE: there are no () at the end of the function name.  We don't want to
 // call the function *in place*, we just want to pass a reference to it to 
 // be used later.
-```
+{% endhighlight %}
 
 And that's it!  Now, the first time the user mouses over the title, its font will grow to 48px.  Note that you would have to listen for a `mouseleave` event and pass in a different function if you wanted it to shrink back to normal once the user mouses out of the title.
 
@@ -67,7 +67,7 @@ And that's it!  Now, the first time the user mouses over the title, its font wil
 
 The last thing I'll talk about are some common ways to modify elements using JavaScript.
 
-```javascript
+{% highlight javascript %}
 const author = document.querySelector('#author');
 // Let's change the text!
 author.innerHTML = "Ryan 'is the coolest' Palo";
@@ -77,7 +77,7 @@ author.style.color = "#BADA55";
 author.classList.add("cool-guy");
 author.classList.remove("blog-slacker");
 author.classList.toggle("is-on-the-ball");
-```
+{% endhighlight %}
 
 A lot of times, it is the easiest to simply toggle a class and handle all of the excess animations, changes, styling in the css.  Makes things easier to read and find.
 
