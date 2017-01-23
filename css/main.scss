@@ -140,6 +140,11 @@ code {
     padding: 5px 10px;
     background-color: #FAFAFA !important;
     line-height: 20px;
+    overflow: scroll;
+}
+
+.contact-link {
+    max-width: 50px;
 }
 
 /* Footer */

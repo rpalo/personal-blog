@@ -9,4 +9,17 @@ I'm creating this blog to keep track of all of the things I'm learning about.  I
     
 This will also be a good way to exercise my writing muscle, and get more practice and fluency with Markdown, Git, Jekyll, and the various other components that are coming together to make this happen.
 
-The other function of this site is the to-do list.  I have ADD of the curiousity, meaning that I want to skip from project to project learning little dabs of each new thing before getting distracted by the new thing.  Now I will try to just put that new thing on the to-do list and keep my head down and working on the current thing, so that hopefully I will get a deeper understanding of the things that I am learning.  If anyone actually does read this blog, I'd love to hear what you think, go ahead and shoot me an email or message me on any of the available social medias... medii?.. median?  Moods?  Whatever.
+The other function of this site is the to-do list.  I have ADD of the curiousity, meaning that I want to skip from project to project learning little dabs of each new thing before getting distracted by the new thing.  Now I will try to put that new thing on the to-do list and keep my head down and working on the current thing, so that hopefully I will get a deeper understanding of the things that I am learning.  If anyone actually does read this blog, I'd love to hear what you think, go ahead and shoot me an email or message me on any of the available social medias... medii?.. median?  Moods?  Whatever.
+
+<a href="https://github.com/rpalo">
+    <img class="contact-link" alt="Ryan's Github" src="/img/github_logo.png">
+</a>
+<a href="https://twitter.com/paytastic">
+    <img class="contact-link" alt="Ryan's Twitter" src="/img/twitter_logo.png">
+</a>
+<a href="https://www.linkedin.com/in/ryan-palo-eit-cswp-9461194b
+">
+    <img class="contact-link" alt="Ryan's Linkedin" src="/img/linkedin_logo.png">
+</a>
+
+You can also email me at hello@assertnotmagic.com or ryan@thepalos.com.
