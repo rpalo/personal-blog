@@ -9,11 +9,11 @@ Because I love tools (and especially editors), I've tried a lot of them.  Do not
 
 ## Vim
 
-I tried Vim.  What I will say about that is that I didn't have a good enough teacher to show it to me.  Overall, Vim failed the test of increasing my productivity (and not my blood pressure).  I will admit -- not proudly -- that Vim and I started off on the wrong foot when I couldn't figure out initially how to exit.  (~~|esc|:q... Like what kind of sick, UX neanderthal...)~~  Anyways!  If someone understands the reasoning behind the design and usage of Vim, I'm all ears and more than happy to learn.
+I tried Vim.  What I will say about that is that I didn't have a good enough teacher to show it to me.  Overall, Vim failed the test of increasing my productivity (and not my blood pressure).  I will admit -- not proudly -- that Vim and I started off on the wrong foot when I couldn't figure out initially how to exit.  <del>`esc:q`... Like what kind of sick, UX neanderthal...</del> Anyways!  If someone understands the reasoning behind the design and usage of Vim, I'm all ears and more than happy to learn.
 
 ## Emacs
 
-Having rejected Vim with vehemence, the next natural option is Emacs.  I will say that I was able to put a significant amount of time into teaching myself the Emacs ways.  It has some nice tools, I'm a fan of the built in shell, calendar, journal, language support, and the fact that it can run in a terminal.  It will most likely be my editor of choice ~~if~~ when I have to code in the terminal and/or over ssh.  The only thing I didn't like about Emacs is that I ended up spending more time looking up how to do things like open a new pane or something than I spend coding.  That and it wasn't super simple for me to customize to my liking.  Again, as with Vim, both are clearly not problems with the editor but with my personal character.  But that's what this is all about, and so... we move on.
+Having rejected Vim with vehemence, the next natural option is Emacs.  I will say that I was able to put a significant amount of time into teaching myself the Emacs ways.  It has some nice tools, I'm a fan of the built in shell, calendar, journal, language support, and the fact that it can run in a terminal.  It will most likely be my editor of choice <del>if</del> when I have to code in the terminal and/or over ssh.  The only thing I didn't like about Emacs is that I ended up spending more time looking up how to do things like open a new pane or something than I spend coding.  That and it wasn't super simple for me to customize to my liking.  Again, as with Vim, both are clearly not problems with the editor but with my personal character.  But that's what this is all about, and so... we move on.
 
 ## Sublime Text
 

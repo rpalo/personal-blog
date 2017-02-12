@@ -3,7 +3,7 @@ layout: page
 title: Assert Not Magic
 ---
 
-First post on the new layout with the new domain name!  Woo!  I'd like to take a minute to explain the significance behind the name.  See, my criteria for selecting a good name came down to two things.  I wanted it to be significant in my life -- something that reflected my experience and point of view, and something that is somewhat of a theme in my life.  The second thing is that it had to be a ~~domain name that was available~~ unique name.
+First post on the new layout with the new domain name!  Woo!  I'd like to take a minute to explain the significance behind the name.  See, my criteria for selecting a good name came down to two things.  I wanted it to be significant in my life -- something that reflected my experience and point of view, and something that is somewhat of a theme in my life.  The second thing is that it had to be a <del>domain name that was available</del> unique name.
 
 So, "assert_not magic?" you say.  "What does it mean?" you say.  Well, at the most literal level, it comes from testing in Ruby.  Much like the snippet on my blog's banner, you might see something like this:
 
