@@ -19,5 +19,5 @@ permalink: /todo/
 - [ ] Mazes: podcast by the Ruby Rogues convinced me to look into the programming and math behind mazes
 - [ ] Configuration Management: I want to learn Ansible or Chef
 - [ ] Containerization such as Docker or similar technologies
-- [ ] Making Bots (slack and the like) to help automate things!  Speaking of which...
-- [ ] Slack!  It seems like a thing to know, since it is a quasi-standard in the industry.
+- [ ] Webpack.  It seems like the tool to know.
+- [ ] SVG?  I'm not sure.  I've just seen some neat art.
