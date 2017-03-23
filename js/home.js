@@ -11,5 +11,7 @@ function fixNav() {
 
   }
 }
-
-window.addEventListener('scroll', fixNav);
+if (window.innerHeight > window.innerWidth) {
+  // only do the fancy fancy if device is in portrait.
+  window.addEventListener('scroll', fixNav);
+}

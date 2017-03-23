@@ -66,6 +66,15 @@ nav {
     letter-spacing: 1px;
 }
 
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+    nav {
+        position: relative;
+    }
+    .site-wrap {
+        margin-top: 0px;
+    }
+}
+
 nav ul {
     margin: 0;
     padding: 0;
@@ -128,10 +137,23 @@ nav a {
         text-decoration: none;
         color: $red-0;
     }
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
 }
 
+// Inline code snippets should have a red box
 code {
     font-size: 80%;
+    background-color: #FFEEEE;
+    padding: 5px;
+}
+
+// Big code blocks shouldn't highlight red or have extra padding
+.highlight code {
+    background-color: inherit;
+    padding: inherit;
 }
 
 blockquote {
@@ -145,7 +167,7 @@ blockquote {
     padding: 5px 10px;
     background-color: #FAFAFA !important;
     line-height: 20px;
-    overflow: scroll;
+    //overflow: scroll;
 }
 
 .contact-link {
@@ -170,6 +192,39 @@ body {
 .container .text-muted {
     margin-left: 20px;
     color: #CCC;
+}
+
+// Mobile optimization
+.mobile-home {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    article.site-wrap {
+        padding: 50px 30px 30px 30px;
+    }
+    pre {
+        white-space: pre-wrap;
+    }
+    .highlight code {
+        //font-size: 70% !important;
+        line-height: 70%;
+        text-align: left;
+        letter-spacing: 0px;
+    }
+    .logo {
+        display: none;
+    }
+    .mobile-home {
+        display: block;
+        background: $yellow-1;
+        color: $red-0;
+        text-align: center;
+        font-family: "Inconsolata", "monospace";
+        text-transform: lowercase;
+        font-size: 150%;
+
+    }
 }
 
 
