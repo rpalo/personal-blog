@@ -11,7 +11,8 @@ function fixNav() {
 
   }
 }
-if (window.innerHeight > window.innerWidth) {
-  // only do the fancy fancy if device is in portrait.
+if (screen.width >= 768) {
+  // only do the fancy fancy if device is desktop.
+  // Mobile is too hard to work with
   window.addEventListener('scroll', fixNav);
 }
