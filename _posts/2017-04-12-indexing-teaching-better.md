@@ -23,7 +23,7 @@ I'm also going to use Python for my explanation because I like it better and I d
 
 ![Diagram of a String](/img/indexing.png)
 
-The main thing to understand is that indexes don't actually fall *on* a particular item in a list or character in a string (since they are accessed the same way).  They surround the letters. *They surround the letters.*  **They surround the letters.**  One more time for the people in the back.
+The main thing to understand is that indices don't actually fall *on* a particular item in a list or character in a string (since they are accessed the same way).  They surround the letters. *They surround the letters.*  **They surround the letters.**  One more time for the people in the back.
 
 # Indices surround the letters.
 

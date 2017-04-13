@@ -144,6 +144,11 @@ nav a {
         list-style-type: none;
         padding-left: 0;
     }
+    img {
+        margin: auto;
+        display: block;
+        max-height: 300px;
+    }
 }
 
 // Inline code snippets should have a red box
