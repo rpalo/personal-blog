@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Nay, It Be Gold
+tags: r
 ---
 
 Guys, I did a bad thing.  You know how I always say that I have a hard time focusing and I always want to skip to a new thing to learn without finishing the thing that I'm on?  And how I am so proud of myself for limiting the number of classes I'm taking at one time as I slowly complete my fake CS degree?  Well, a couple weeks ago, I was feeling stressed out and decided I had worked really hard and deserved to do something fun, so I joined not one but *two* more MOOCs.  

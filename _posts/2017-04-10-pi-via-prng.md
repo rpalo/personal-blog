@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Pi Via PRNG
+tags: math python tricks
 ---
 
 I just found something amazing out.  It's not that amazing.  But it *is* neat.  I'm going to build to it in an unnecessarily dramatic and roundabout way.

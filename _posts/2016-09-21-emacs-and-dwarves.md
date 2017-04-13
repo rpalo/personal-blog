@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Emacs and Dwarves
+tags: editors emacs
 ---
 
 Two short things to write about today: Emacs and dwarves.  That's right, I finally did it.  I picked a side in the endless struggle of text editors.  Not really.  I thought it would make me a cooler programmer if I could reliably use either Emacs or Vim.  Also, due to the fact that both editors seem crazy archaic but thousands of people still use them, they have to be good somehow.  

@@ -1,6 +1,7 @@
 ---
 title: Default Argument Tricks
 layout: page
+tags: python algorithms tricks
 ---
 
 The other day I was working on a code challenge on [CodeWars](https://www.codewars.com).  I finished it up, feeling proud of myself (as one does), and moved on with my day.  A little while later, it struck me that I had done something that few of the other people that completed the challenge had done, and my solution (I thought humbly) was more elegant than some.  Here is a paraphrasing of the challenge.  

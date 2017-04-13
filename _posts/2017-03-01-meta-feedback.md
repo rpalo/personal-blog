@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Meta Feedback
+tags: soft-skills
 ---
 
 ## The Intro

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Indexing - Teaching Things Better
+tags: teaching python
 ---
 
 I want to talk about indexing.  More importantly, I want to talk about how we are explaining indexing to new programmers.  But first, I need to lay some background.

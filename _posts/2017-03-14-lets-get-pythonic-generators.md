@@ -1,6 +1,7 @@
 ---
 title: Let's Get Pythonic -- Generators
 layout: page
+tags: python tricks
 ---
 
 A couple posts ago, I wrote about using generators to [efficiently create prime numbers](http://assertnotmagic.com/2017/02/24/optimal-primes.html). I think I promised then to go a little more in detail about them, which I am now doing here, thus proving that I am a dependable and trustworthy friend.  A little caveat.  Before I started writing this, I knew the basics, but I wanted to get a better grasp of the finer details.  [This article](http://intermediatepythonista.com/python-generators) by Obi Ike-Nwosu is where I got most of my extra details.  In fact, this article will mostly be for me, to make sure I have a grasp on everything, and will contain a significant amount of the information from his original article.  I strongly recommend you check out [The Intermediate Pythonista](http://intermediatepythonista.com/) for the abovementioned article and apparently many others as well.  For those of you committed to seeing me lay out a review of the same information in my own way, let us begin.

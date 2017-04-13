@@ -1,6 +1,7 @@
 ---
 layout: page
 title: AI with Pacman
+tags: algorithms python ai
 ---
 
 I did it!  I know this post is late, but that's because I wanted to conquer this project so I could post about it.  So that's what I'm doing.  One of the courses I'm taking (of the many -- I've got a short attention span.  I'm working on it) is an AI course on edX.  So far, it's one of the most interesting courses I've taken.  It's also one of the hardest classes (including my M.E. undergrad) I've ever taken.

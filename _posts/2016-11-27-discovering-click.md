@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Discovering Click
+tags: python tools
 ---
 I'm going to have two posts here in quick succession, because I learned a bunch of things in the last couple weeks all in a row that are really cool.  The first one I want to talk about is (Click)[https://click.pocoo.com/5], which is a Python framework for quickly making command-line interface (CLI) programs.  I have been using it recently to make a (tool that automates a few of the more repetetive tasks at work)[https://github.com/rpalo/pq-cli].  The basics are really simple!
 

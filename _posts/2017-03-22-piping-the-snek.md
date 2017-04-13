@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Piping the Snek
+tags: python tricks bash
 ---
 
 This is going to be just a quick one.  I discovered something the other day that I feel like I should have already known about, but it just made me so happy that I had to write it down.  Scenario: You are working in the command line.  You have a list of files you want to do some jimmy-jacking with.  A little string substitution here.  Adding/removing a file header.  It's not too complicated, but it is just complicated enough that your standard bash commands start to fail you.  You (if you are like me) begin to slowly realize with dread that you will have to go get the big guns: awk, sed, and others.  Granted, it would probably make you a better person to have a confident control of those commands.  That being said, I do not.  I'm cool with `ls, cd, pwd`.  Me and `cat and echo` are buddies.  `Grep and find` come over for dinner once a month.  Beyond that, I need a couple (ten) tabs of documentation open to get much done.  Until now.

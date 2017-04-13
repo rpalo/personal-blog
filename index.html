@@ -5,12 +5,15 @@ permalink: /
 
 <div class="home">
 
+  <!-- Current Post -->
   {% for post in site.posts limit:1 %}
     <h1>{{ post.title }}</h2>
     <small>{{ post.date | date: "%b %-d, %Y" }}</small>
     <p>{{ post.content }}</p>
   {% endfor %}
-  <h3>Featured Posts</h3>
+  <hr>
+  <!-- Featured Posts List -->
+  <h2>Featured Posts</h2>
   <ul class="post-list">
     <li>
       <span class="post-meta">Jan 18, 2017</span>
@@ -23,6 +26,13 @@ permalink: /
       </li>
     {% endfor %}
   </ul>
+  <hr>
+  <!-- Tags List -->
+  <p>
+    {% for tag in site.tags %}
+    <a href="/tags/{{tag | first}}/" style="font-size: {{ tag[1] | size | times: 2 | plus: 12 }}px">{{ tag[0] }} | </a>
+    {% endfor %}
+  </p>
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 

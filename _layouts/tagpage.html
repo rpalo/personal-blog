@@ -1,0 +1,21 @@
+---
+layout: page
+---
+
+<h1>{{ page.tag | capitalize }}</h1>
+
+<ul>
+    {% for post in site.tags[page.tag] %}
+    <li>
+        {{ post.date | date: "%B %d, %Y" }}: <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+</ul>
+
+<!-- Tags List -->
+<hr>
+<p>
+    {% for tag in site.tags %}
+    <a href="/tags/{{tag | first}}/" style="font-size: {{ tag[1] | size | times: 2 | plus: 10 }}px">{{ tag[0] }} | </a>
+    {% endfor %}
+</p>

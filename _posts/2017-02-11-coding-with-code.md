@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Coding with Code
+tags: editors vscode vim emacs sublime
 ---
 
 I think I am not alone among developers when I say unabashedly that I love gadgets.  A lot.  Now, I try not to jump from tool to plugin to framework willy nilly, dropping everything else, but I'm always on the lookout for things that make life easier, faster, and generally nicer.  There are a few topics that developers are kind of touchy about.  I'm going to try to hit all of them.  I'm going to start by vehemently recommending a new editor.  Well, not new, per se, but new to me.

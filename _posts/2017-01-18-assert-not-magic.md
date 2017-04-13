@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Assert Not Magic
+tags: not_magic soft-skills
 ---
 
 First post on the new layout with the new domain name!  Woo!  I'd like to take a minute to explain the significance behind the name.  See, my criteria for selecting a good name came down to two things.  I wanted it to be significant in my life -- something that reflected my experience and point of view, and something that is somewhat of a theme in my life.  The second thing is that it had to be a <del>domain name that was available</del> unique name.

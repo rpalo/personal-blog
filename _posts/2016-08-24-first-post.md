@@ -1,6 +1,7 @@
 ---
 layout: page
 title: First Post
+tags: python django rails
 ---
 
 I want to make this first post mostly just to get through the paralysis and procrastination, so I can get these posts rolling.  That's the goal of this post.  If it's actually interesting and engaging, that's a bonus.

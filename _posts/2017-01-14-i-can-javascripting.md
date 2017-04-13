@@ -1,6 +1,7 @@
 ---
 layout: page
 title: I Can JavaScripting?
+tags: javascript
 ---
 Hey!  Sorry for the long gap.  It's been over a month since my last post, which is not ok.  Luckily, I've recently started the [100 days of code](https://github.com/rpalo/100-days-of-code) challenge along with a number of the other [CodeNewbies](http://www.codenewbie.org/blogs/100-days-of-code-codenewbie-edition), and that should help keep me on track.  Also, I'm working on some changes to the blog that should be coming up here in the next week or so.  I actually got a url that means something, which is neat!  More on that after the change.
 
