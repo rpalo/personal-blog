@@ -4,7 +4,7 @@ title: Built-In Methods
 tags: ruby tricks
 ---
 
-This is just going to be a quick one.  Recently, I was working on something (that I will discuss in an upcoming post) on an airplane.  Obviously I'm not going to fork out five whole dollars for the onboard internet access, so I was roughing it.  I came across an error.
+This is just going to be a quick one.  Recently, I was working on something (that I will discuss in an upcoming post) on an airplane.  I was using Ruby.  Obviously I'm not going to fork out five whole dollars for the onboard internet access, so I was roughing it.  I came across an error.
 
 {% highlight ruby %}
 if line.contains? "tags: "
@@ -24,9 +24,15 @@ NOPE.  `Unexpected keyword_in`.  Bah!  I knew there was a method here, but I cou
 $ irb
 # Typical IRB headers
 >>> "Potato".methods
-[:include?, :%, :*, :+, :unicode_normalize, :to_c, :unicode_normalize!, :unicode_normalized?, :count, :partition, :unpack, :encode, :encode!, :next, :casecmp, :insert, :bytesize, :match, :succ!, :next!, :upto, :index, :rindex, ...]
+[:include?, :%, :*, :+, :unicode_normalize, :to_c, :unicode_normalize!, :unicode_normalized?, :count, ...
 {% endhighlight %}
 
 There!  Right at the front was what I needed.  No Googling required.  So the next time you reach for Google for a question, try asking your code first!
+
+{% highlight ruby %}
+if line.include? "tags: "
+    # profit
+end
+{% endhighlight %}
 
  > In case you're interested, you can do the same thing in Python via `dir("potato")`.
