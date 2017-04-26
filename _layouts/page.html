@@ -6,5 +6,7 @@ layout: default
     {{ content }}
     <small>
         {% for tag in page.tags %}
-        <a href="/tags/{{tag}}/">{{ tag }}</a> {% endfor %}
+        <a href="/tags/{{tag}}/">{{ tag }}</a>
+        {% endfor %}
+    </small>
 </div>
