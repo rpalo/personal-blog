@@ -203,6 +203,28 @@ body {
     color: #CCC;
 }
 
+#home-footer {
+    display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+    #home-footer {
+        flex-direction: column;
+    }
+}
+
+#left-home-footer {
+    flex: 1;
+}
+
+#center-home-footer {
+    flex: 1;
+}
+
+#right-home-footer {
+    flex: 1;
+}
+
 // Mobile optimization
 .mobile-home {
     display: none;

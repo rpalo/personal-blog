@@ -115,7 +115,8 @@ title: Tag
 
 {% comment %}
 =======================
-The following part extracts all the tags from your posts and sort tags, so that you do not need to manually collect your tags to a place.
+The following part extracts all the tags from your posts and sort tags,
+ so that you do not need to manually collect your tags to a place.
 =======================
 {% endcomment %}
 {% assign rawtags = "" %}

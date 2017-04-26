@@ -12,27 +12,40 @@ permalink: /
     <p>{{ post.content }}</p>
   {% endfor %}
   <hr>
-  <!-- Featured Posts List -->
-  <h2>Featured Posts</h2>
-  <ul class="post-list">
-    <li>
-      <span class="post-meta">Jan 18, 2017</span>
-      <a class="post-link" href="{% post_url 2017-01-18-assert-not-magic %}">Assert Not Magic</a>
-    </li>
-    {% for post in site.posts offset:1 limit:3 %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+
+<!-- Footer for Homepage -->
+  <div id="home-footer">
+    <div id="left-home-footer">
+      <!-- Featured Posts List -->
+      <h2>Featured Posts</h2>
+      <ul class="post-list">
+        <li>
+          <span class="post-meta">Jan 18, 2017</span>
+          <a class="post-link" href="{% post_url 2017-01-18-assert-not-magic %}">Assert Not Magic</a>
+        </li>
+        {% for post in site.posts offset:1 limit:3 %}
+          <li>
+            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div id="center-home-footer">
+      <!-- Spacer -->
+    </div>
+    <div id="right-home-footer">
+      <!-- Tags List -->
+      <h2>Tags</h2>
+      <p>
+        {% for tag in site.tags %}
+        <a href="/tags/{{tag | first}}/" style="font-size: {{ tag[1] | size | times: 2 | plus: 12 }}px">{{ tag[0] }} | </a>
+        {% endfor %}
+      </p>
+    </div>
+  </div>
   <hr>
-  <!-- Tags List -->
-  <p>
-    {% for tag in site.tags %}
-    <a href="/tags/{{tag | first}}/" style="font-size: {{ tag[1] | size | times: 2 | plus: 12 }}px">{{ tag[0] }} | </a>
-    {% endfor %}
-  </p>
+  
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
