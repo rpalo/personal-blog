@@ -124,7 +124,7 @@ plt.show()
 
 Woah!  Let's get a better look at that spike.
 
-![Zoomed in plot of force](/img/whale-force-plot.png)
+![Zoomed in plot of force](/img/whale-force-impact.png)
 
 You can see he is feeling some crazy gravitational forces in the downward direction until WHAMMO!  Checking the height of the whale right around this point shows that he's where we are splitting the upper and lower Stratosphere: [~25000 m](https://www.grc.nasa.gov/WWW/K-12/airplane/atmosmet.html).  Basically, our whale is faceplanting onto our atmosphere.  Realistically, I'm pretty sure that, if our whale hadn't burned up already, we would have a localized whale-splosion and whale-shower.  
 
