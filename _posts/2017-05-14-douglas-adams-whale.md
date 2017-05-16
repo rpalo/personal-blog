@@ -25,7 +25,7 @@ This excerpt leads me to ask: can we simulate it?  With a little help from Pytho
 
 Let's start with the forces at play here.  Basically, the only two I'm going to worry about are gravity acting on the whale and drag working against the whale as it falls.  Let's assume this whale is falling from a geosynchronus orbit (orbit in space that would allow it to keep pace as the earth rotates) -- approximately [3.5786 x 10^7 meters elevation](https://en.wikipedia.org/wiki/Geostationary_orbit).  For those that are interested, I'm going to plop the only real in-depth equation here.
 
-![Sketch of Forces](/img/whale-sketch.jpg)
+![Sketch of Forces](/img/whale-sketch.JPG)
 
 Turning the equations into code isn't super difficult.  We just need to fill in some of the variables above first.  Since getting data on an alien planet and alien whale is more difficult, let's use Earth and an Earthly Blue Whale.  The mass of the earth is roughly [5.97 x 10^24 kg](https://en.wikipedia.org/wiki/Earth), and its radius is approximately [6.37 million meters](https://en.wikipedia.org/wiki/Earth).  Blue whales live in the region between about [80-120 metric tons](https://en.wikipedia.org/wiki/Blue_whale).  To make the math nice, let's use 100 (100,000 kg).  Fun fact: the largest known dinosaur came in at around [90 metric tons](https://en.wikipedia.org/wiki/Blue_whale)!  Anyways, with these constants, and the Universal Gravitational Constant -- [6.674 x 10^-11 m^3/kg s^2](https://en.wikipedia.org/wiki/Gravitational_constant) -- let's turn this into code.
 
