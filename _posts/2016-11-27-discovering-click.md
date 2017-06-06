@@ -3,7 +3,7 @@ layout: page
 title: Discovering Click
 tags: python tools
 ---
-I'm going to have two posts here in quick succession, because I learned a bunch of things in the last couple weeks all in a row that are really cool.  The first one I want to talk about is (Click)[https://click.pocoo.com/5], which is a Python framework for quickly making command-line interface (CLI) programs.  I have been using it recently to make a (tool that automates a few of the more repetetive tasks at work)[https://github.com/rpalo/pq-cli].  The basics are really simple!
+I'm going to have two posts here in quick succession, because I learned a bunch of things in the last couple weeks all in a row that are really cool.  The first one I want to talk about is [Click](https://click.pocoo.com/5), which is a Python framework for quickly making command-line interface (CLI) programs.  I have been using it recently to make a [tool that automates a few of the more repetetive tasks at work](https://github.com/rpalo/pq-cli).  The basics are really simple!
 
 {% highlight python %}
 # Example taken roughly from their documentation
@@ -46,5 +46,5 @@ Options:
   --help               Show this message and exit.
 {% endhighlight %}
 
-And there are a whole bunch of other great things about it.  There is built in support for testing to aid with TDD and writing tests in general.  With my PQ-CLI, my goal was to do the project like a real big kid, with license, readme, git repo, writing tests first, etc.  I think I did ok with that, and I'm still going.  There is support for grouping and nexting and piping commands.  And the documentation is really helpful (examples first, API and documentation later).  I wasn't suprised when I looked up at the url for Click and realized it was part of the Pocoo family (the guy who made Flask, among a bunch of other useful projects).  Anyways, check out (my project)[https://github.com/rpalo/pq-cli] for more examples and take a stop by the (main Click project page)[https://click.pocoo.com/5] for even more guidance.
+And there are a whole bunch of other great things about it.  There is built in support for testing to aid with TDD and writing tests in general.  With my PQ-CLI, my goal was to do the project like a real big kid, with license, readme, git repo, writing tests first, etc.  I think I did ok with that, and I'm still going.  There is support for grouping and nexting and piping commands.  And the documentation is really helpful (examples first, API and documentation later).  I wasn't suprised when I looked up at the url for Click and realized it was part of the Pocoo family (the guy who made Flask, among a bunch of other useful projects).  Anyways, check out [my project](https://github.com/rpalo/pq-cli) for more examples and take a stop by the [main Click project page](https://click.pocoo.com/5) for even more guidance.
 
