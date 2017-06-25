@@ -12,9 +12,9 @@ Vuex is the "back of the frontend" that we'll be using to interface with (eventu
 
 In order to get started, all we'll need is what you had after Part 1 -- and to install Vuex.
 
-{% highlight bash %}
+```bash
 $ npm install --save vuex
-{% endhighlight %}
+```
 
 ## 2. Creating the Store
 
@@ -24,7 +24,7 @@ Create a folder `src/store/` and create `store.js` inside that folder.  Vuex Sto
 
 `State` represents the state of your data.  What is the current value of `todos`?  Your components can read from this state directly (or through `getters` if there is some processing to be done.  We won't cover that now), but in order to write to it, they need to go through actions.  A component can `dispatch` an action, and actions can be as asynchronus as you like.  Once the action has completed all side-effects, like hitting the database, it can `commit` a `mutation`.  A `mutation` is a synchronus change to the Vuex `state`, and they *must* be synchronus.  Get it?  Actions: asynchronus.  Mutations: the last step of the action, totally synchronus.  Anyways, too much theory.  Boo theory.  More code!  Here are the contents of `store.js`.
 
-{% highlight javascript %}
+```javascript
 // store.js
 
 import Vue from 'vue'
@@ -61,7 +61,7 @@ const store = new Vuex.Store({
 
 export default store
 
-{% endhighlight %}
+```
 
 You can see most of the pieces we talked about above.  Our actions could (and will) do more, but currently they just pass through and `commit` their respective mutations.  You can see that if we had very many more mutations and/or actions, we would want to break them out into separate files: `actions.js` and `mutations.js` and import them separately.  The mutations don't have to be in all caps, either.  You could declare them as in-place functions just like the actions (and even use the same names as the actions if you want).  The tutorial I saw used `SCREAMING_SNAKE` case, and I kind of like it because it helps me tell the difference between the actions and the mutations.  Do what you want, it's your life.
 
@@ -69,7 +69,7 @@ You can see most of the pieces we talked about above.  Our actions could (and wi
 
 OK!  Now we need to make this delicious little store available to our app.  Modify your `main.js` file to look like the following.
 
-{% highlight javascript %}
+```javascript
 // main.js
 
 import Vue from 'vue'
@@ -83,12 +83,11 @@ new Vue({
   store: store,
   components: { App }
 })
-
-{% endhighlight %}
+```
 
 Now our store will be available from within the Components.  The following is the new shiny `TodoList.vue`.
 
-{% highlight javascript %}
+```html
 // src/components/TodoList.vue
 
 <template>
@@ -116,11 +115,11 @@ export default {
   }
 }
 </script>
-{% endhighlight %}
+```
 
 You'll notice that there was really only one change for the store.  We changed the `data` key of the component to a `computed` section.  That makes it so that our component will update as the outside data changes.  `Computed` contains functions for each variable you reference.  In our case that's just todos.  We reference the store object with `$store` and can read from it directly, like we talked about before.  Please also notice that I tweaked the template as well to make it work better.  I took out the `li` element and placed the `v-for` directly within the `todo`.  I'm not sure, but I kind of think it wouldn't have worked the way we had it previously.  Whoopsie.  That's all the changes here.  Next is `Todo.vue`.
 
-{% highlight javascript %}
+```html
 // src/components/Todo.vue
 
 <template>
@@ -134,11 +133,11 @@ export default {
   props: ['todo']
 }
 </script>
-{% endhighlight %}
+```
 
 As you can see, the only change was fixing my previous booboo, and placing the `li` element that we took out of `TodoList.vue` into here, replacing the `p` tags.  It's also slightly more intuitive, I think.  Moving on to the `UserInput.vue`.
 
-{% highlight javascript %}
+```html
 // src/components/UserInput.vue
 
 <template>
@@ -166,7 +165,7 @@ export default {
   }
 }
 </script>
-{% endhighlight %}
+```
 
 No changes to the template.  We updated the `createTodo` method here to `dispatch` the `createTodo` action of our `store`.  Note that we can pass a new Todo object as a second argument to `dispatch`.  `clearTodos` functions in a similar manner.  This is interesting because you can see that not *all* state is kept in the store.  The `newTodoText` variable doesn't need to be saved for later, so we keep that in the `data` section of the component and the `store` never even worries about it.
 
