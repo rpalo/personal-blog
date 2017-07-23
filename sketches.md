@@ -4,8 +4,6 @@ title: Sketches
 permalink: /sketches/
 ---
 
-# Sketches
-
 These are a few animations/sketches/interactive-javascripty-arty-things that I've done and are available.  I think they're cool.  Check them out!
 
 [Food Chain](/foodchain)

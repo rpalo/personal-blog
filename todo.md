@@ -4,8 +4,6 @@ title: To-Do List
 permalink: /todo/
 ---
 
-# To Do
-
 ## Dive Deeper
 - &#9633; System administration: managing systems, spinning up servers, handling infrastructure, security, etc.
 - &#9633; Ruby: object oriented programming, actually building apps
