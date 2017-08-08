@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Emacs and Dwarves
+description: My first impressions of Emacs and Dwarf Fortress
+cover_image: emacs-and-df.jpg
 tags: editors emacs
 ---
 

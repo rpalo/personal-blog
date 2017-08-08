@@ -2,6 +2,8 @@
 layout: page
 title: Microdecisions
 tags: soft-skills
+description: Sometimes it's the small decisions that make all the difference
+cover_image: wooden.png
 ---
 The background for this post is actually coming mostly from my mechanical engineering experience, but the more I program, the more I'm starting to see that there are a lot of similarities between designing parts and designing software.  What I want to write about today is the importance of *microdecisions*.
 

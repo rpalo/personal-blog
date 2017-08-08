@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Pi Via PRNG
+description: Generating Pi with random numbers via math trickery
+cover_image: pi-prng.jpg
 tags: math python tricks
 ---
 

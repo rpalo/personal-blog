@@ -1,6 +1,8 @@
 ---
 title: Cache Me Outside
 layout: page
+description: An easy trick to speed up your slower functions
+cover_image: cache.png
 tags: python tricks
 ---
 

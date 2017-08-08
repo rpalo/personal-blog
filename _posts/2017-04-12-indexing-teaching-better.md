@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Indexing - Teaching Things Better
+description: Finding an intuitive way to describe why indexing starts at 0 in Python
+cover_image: indexing.png
 tags: teaching python
 ---
 

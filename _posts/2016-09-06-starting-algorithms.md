@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Starting Algorithms
+description: Some algorithms from the algorithms class I'm taking.
+cover_image: starting-algorithms.jpg
 tags: algorithms python
 ---
 

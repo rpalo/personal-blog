@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Piping the Snek
+description: Using Python with shell pipes for extra awesomeness
+cover_image: pipe-snek.webp
 tags: python tricks bash
 ---
 

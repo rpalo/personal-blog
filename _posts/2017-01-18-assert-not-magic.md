@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Assert Not Magic
+description: Programming isn't magic.  It's logical, learnable, and you can do it too.
+cover_image: logo.png
 tags: not_magic soft-skills
 ---
 

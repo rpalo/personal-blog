@@ -1,7 +1,9 @@
 ---
 layout: page
 title: First Post
+description: My first blog post ever!
 tags: python django rails
+cover_image: first-post.jpg
 ---
 
 I want to make this first post mostly just to get through the paralysis and procrastination, so I can get these posts rolling.  That's the goal of this post.  If it's actually interesting and engaging, that's a bonus.

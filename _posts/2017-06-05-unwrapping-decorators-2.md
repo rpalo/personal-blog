@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Unwrapping Decorators, Part 2
+description: A more in-depth look at the more advanced capabilities of decorators
+cover_image: decorators.jpg
 tags: python pythonic functional
 ---
 # Quick Recap

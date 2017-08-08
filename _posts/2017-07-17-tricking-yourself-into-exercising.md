@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Tricking Yourself into Exercising
+description: A quick tip that might help if you find it hard to exercise
+cover_image: exercise.jpg
 tags: exercise tricks fitness
 ---
 

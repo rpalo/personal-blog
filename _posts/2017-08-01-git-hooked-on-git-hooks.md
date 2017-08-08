@@ -1,6 +1,8 @@
 ---
 title: Git Hooked on Git Hooks
 layout: page
+description: A beginner's overview of git hooks to automate your process
+cover_image: hook.jpg
 tags: git
 ---
 

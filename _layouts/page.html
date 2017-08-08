@@ -3,6 +3,11 @@ layout: default
 ---
 
 <article class="site-wrap">
+    <div id="cover">
+        {% if page.cover_image %}
+        <img alt="Cover Image" class="cover-image" src="{{ '/img/' | append: page.cover_image }}">
+        {% endif %}
+    </div>
     <h1>{{ page.title }}</h1>
     {{ content }}
     <small>
@@ -10,4 +15,4 @@ layout: default
         <a href="/tags/{{tag}}/">{{ tag }}</a>
         {% endfor %}
     </small>
-</div>
+</article>

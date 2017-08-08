@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Coding with Code
+description: VS Code is the beeeessssttt!
+cover_image: vscode.gif
 tags: editors vscode vim emacs sublime
 ---
 

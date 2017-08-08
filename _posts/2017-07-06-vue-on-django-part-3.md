@@ -1,6 +1,8 @@
 ---
 title: Vue on Django, Part 3
 layout: page
+description: Vue tutorial, part 3, where we set up the Django REST API
+cover_image: django-vue.png
 tags: vue django es6 tutorial
 ---
 

@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Vue on Django, Part 1
+description: Vue tutorial, part 1, where we set up the Vue front end
+cover_image: django-vue.png
 tags: vue django es6 tutorial
 ---
 

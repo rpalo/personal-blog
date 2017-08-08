@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Meta Feedback
+description: Wherin I cry like a little baby because the bad man was mean to me
+cover_image: feedback.jpg
 tags: soft-skills
 ---
 

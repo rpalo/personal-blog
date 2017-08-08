@@ -1,5 +1,7 @@
 ---
 title: Default Argument Tricks
+description: Solving tricky problems using tricky argument tricks
+cover_image: fib.png
 layout: page
 tags: python algorithms tricks
 ---

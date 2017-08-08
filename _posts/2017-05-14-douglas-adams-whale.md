@@ -1,6 +1,8 @@
 ---
 title: Douglas Adams's Whale
 layout: page
+description: A discussion and physical model of a whale in space
+cover_image: whale.jpg
 tags: python physics fun scientific
 ---
 

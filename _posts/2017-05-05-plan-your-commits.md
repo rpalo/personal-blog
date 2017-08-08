@@ -1,6 +1,8 @@
 ---
 title: Plan Your Commits
 layout: page
+description: One trick that might help you commit more consistently
+cover_image: plan-commits.jpg
 tags: tricks git
 ---
 

@@ -1,6 +1,8 @@
 ---
 title: Vue on Django, Part 4
 layout: page
+description: Vue tutorial, part 4, where we wrap it all up
+cover_image: django-vue.png
 tags: vue django es6 tutorial
 ---
 

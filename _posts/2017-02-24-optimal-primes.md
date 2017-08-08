@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Optimal Primes
+description: Coming up with a more efficient prime factors algorithm
+cover_image: optimus.jpg
 tags: algorithms python puzzle
 ---
 If you like math, *and* you're learning how to program, I see absolutely no reason why you should not know about [Project Euler](https://projecteuler.net).  "Project Yooler?!" you ask incredulously.  "What outlandish nonsense is this?"  You're in for a treat.  It's an archive of puzzles that are math-based and generally not solvable by hand.  There's not a whole lot to it.  It asks a question like 'what is the 10001st prime number?' and you can submit your answer.  Once you get the answer correct, you get access to the question's forum, where you can discuss answers and see other people's solutions.

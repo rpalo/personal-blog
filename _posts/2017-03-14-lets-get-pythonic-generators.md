@@ -1,5 +1,7 @@
 ---
 title: Let's Get Pythonic -- Generators
+description: Learning about generators in our journey to Python enlightenment
+cover_image: generator.png
 layout: page
 tags: python tricks
 ---

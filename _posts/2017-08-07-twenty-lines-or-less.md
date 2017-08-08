@@ -1,12 +1,12 @@
 ---
 title: Your Own REPL in Twenty Lines or Less
 layout: page
+description: Python's standard library makes it easy for you to use custom REPL's
+cover_image: code-repl.gif
 tags: python fun
 ---
 
 Have you ever been in a Python interactive REPL and said to yourself, "You know, this is nice and all, but... it's missing something.  There's not enough *me*!"  Well, worry no more!  I'll show you how to do it in twenty lines or less!  Let me introduce the main attraction:
-
-![Python REPL](/img/code-repl.gif)
 
 ## Code
 

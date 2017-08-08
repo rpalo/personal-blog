@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Nay, It Be Gold
+description: My first impressions of the R language
+cover_image: it-be-gold.jpg
 tags: r
 ---
 

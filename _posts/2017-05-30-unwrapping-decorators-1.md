@@ -1,6 +1,8 @@
 ---
 title: Unwrapping Decorators, Part 1
 layout: page
+description: An introduction to decorators, a functional Python topic
+cover_image: decorators.jpg
 tags: python pythonic functional
 ---
 

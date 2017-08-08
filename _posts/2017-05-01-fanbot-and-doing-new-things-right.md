@@ -1,6 +1,8 @@
 ---
 title: Fanbot, and Doing New Things Right
 layout: page
+description: An overview of my new project and why I chose the layout I did
+cover_image: fanbot.jpg
 tags: python soft-skills
 ---
 

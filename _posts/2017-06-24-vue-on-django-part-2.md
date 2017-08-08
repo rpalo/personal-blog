@@ -1,6 +1,8 @@
 ---
 title: Vue on Django, Part 2
 layout: page
+description: Vue tutorial, part 2, where we set up Vuex, the client data store
+cover_image: django-vue.png
 tags: vue django es6 tutorial
 ---
 

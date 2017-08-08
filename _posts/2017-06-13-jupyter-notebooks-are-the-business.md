@@ -1,6 +1,8 @@
 ---
 title: Jupyter Notebooks are The Business
 layout: page
+description: Me, gushing about one of my favorite tools
+cover_image: jupiter.jpg
 tags: python teaching tools
 ---
 

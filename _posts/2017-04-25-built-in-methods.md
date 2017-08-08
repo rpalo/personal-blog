@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Built-In Methods
+description: A quick tip to aid in off-line coding
+cover_image: method.png
 tags: ruby tricks
 ---
 

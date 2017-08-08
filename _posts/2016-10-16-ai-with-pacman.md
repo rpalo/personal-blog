@@ -1,6 +1,8 @@
 ---
 layout: page
 title: AI with Pacman
+description: Trying to get AI algorithms straight in my head.
+cover_image: pacman-algo.gif
 tags: algorithms python ai
 ---
 

@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Jekyll Tags, the Easy Way
+description: How I implemented tags without copy-pasting gobbledygook
+cover_image: tags.png
 tags: ruby jekyll
 ---
 
