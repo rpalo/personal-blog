@@ -1,6 +1,6 @@
 ---
 title: Step Your Meta Game Up
-cover_image: meta_tag.jpg
+cover_image: meta-tag.jpg
 layout: page
 description: Learn how to make sharing your site look awesome!
 tags: html seo social
