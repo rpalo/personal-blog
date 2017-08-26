@@ -153,6 +153,14 @@ nav a {
         list-style-type: none;
         padding-left: 0;
     }
+    .dotted {
+        list-style-type: disc;
+        padding-left: 20px;
+
+        li {
+            padding-bottom: 10px;
+        }
+    }
     img {
         margin: auto;
         display: block;
@@ -275,5 +283,3 @@ body {
 .contact {
     font-weight: bold;
 }
-
-
