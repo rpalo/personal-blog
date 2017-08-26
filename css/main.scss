@@ -2,7 +2,7 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css?family=Inconsolata|Source+Sans+Pro:200,300');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Source+Sans+Pro:300,600');
 
 /* Colors */
 
@@ -83,6 +83,7 @@ nav ul {
     padding: 0;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
 }
 
 nav li {
@@ -245,10 +246,10 @@ body {
 
 @media only screen and (max-width: 768px) {
     article.site-wrap {
+        img {
+            max-width: 70vw;
+        }
         padding: 50px 30px 30px 30px;
-    }
-    pre {
-        white-space: pre-wrap;
     }
     .highlight code {
         //font-size: 70% !important;
@@ -271,5 +272,8 @@ body {
     }
 }
 
+.contact {
+    font-weight: bold;
+}
 
 
