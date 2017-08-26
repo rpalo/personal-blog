@@ -2,6 +2,7 @@
 layout: page
 title: To-Do List
 permalink: /todo/
+description: A list of my long-term todos, to help me keep on track.
 ---
 
 ## Dive Deeper

@@ -2,6 +2,7 @@
 layout: page
 title: Sketches
 permalink: /sketches/
+description: Some P5 sketches that I made that I think are neat.
 ---
 
 These are a few animations/sketches/interactive-javascripty-arty-things that I've done and are available.  I think they're cool.  Check them out!
