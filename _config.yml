@@ -35,3 +35,7 @@ timezone: America/Los_Angeles
 
 # File Inclusions
 exclude: [README.md,blog.sublime-project, blog.sublime-workspace,deploy.sh, notes.md]
+
+# Gems
+plugins:
+- jekyll-autoprefixer
