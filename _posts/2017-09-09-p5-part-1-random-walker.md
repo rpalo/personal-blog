@@ -12,6 +12,10 @@ It finally happened.  My wife is letting me teach her how to code!  Or, at least
 
 The first lesson will cover setting up a project, a quick flyby of HTML and JS and how they fit in together, setting up the "Dev Environment" (text editor and browser, no packages), and getting into it.  To cap everything off, we'll build a random walker in two dimensions.
 
+## A Note for Newbies
+
+If you're just starting to learn to program, let me tell you something.  Programming is Hard.  So please don't feel discouraged or stupid.  This tutorial moves *really* fast and covers a *lot*, so feeling overwhelmed or not understanding everything on the first pass-through is **totally normal**.  My goal here is to take you through the motions and have you experience the thrill programmers feel of creating something dynamic and awesome out of nothing.  So, here's what I'll ask.  Please, even if you get stuck or don't understand what's happening, just go through and type out the code examples.  Get to the end and build our Random Walker.  Once you've got that little dude wandering around your screen, ask me every question you can think of until things make more sense.  You can email me or send me a Twitter message.  Links are in my bio on the [about page](/about/).  I'll work through the homework with you (since the homework will really help get things solidified some).  Just put your head down, get through it, don't give up, and don't feel weird asking for help.  If something doesn't make sense, it's not because you're a doofus -- it's because I didn't write well enough.  Now.  For real this time.  Let's get started
+
 ## Step 1: The Setup
 
 There's a few things we'll need to get started: a browser (I like Chrome, myself) and a text editor (we'll use [Sublime Text](https://www.sublimetext.com/) just to get started).
