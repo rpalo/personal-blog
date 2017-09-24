@@ -2,7 +2,7 @@
 layout: page
 title: Comparison Time
 description: Definitely compare yourself to others -- but do it right.
-tags: soft-skills, encouragement, not-magic
+tags: soft-skills encouragement not-magic
 cover_image: comparison.gif
 ---
 
