@@ -137,9 +137,25 @@ nav a {
     }
     h1 {
         border-bottom: 1px solid #CCC;
-        padding-bottom: 5px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        font-size: 3em;
     }
-    
+
+    h2 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 2em;
+        line-height: 1.5em;
+        text-align: center;
+    }
+
+    h3 {
+        padding-top: 5px;
+        padding-bottom: 10px;
+        font-size: 1.5em;
+        text-align: center;
+    }
     small {
         font-size: 14px !important;
         color: #808080;
@@ -289,6 +305,14 @@ body {
         text-transform: lowercase;
         font-size: 150%;
 
+    }
+    .site-wrap h1 {
+        font-size: 1.5em;
+        line-height: 1.5em;
+    }
+    .site-wrap h2 {
+        font-size: 1.5em;
+        line-height: 1.25em;
     }
 }
 
