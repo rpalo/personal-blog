@@ -163,7 +163,7 @@ nav a {
     .post-list {
         list-style: none;
     }
-    
+
     a {
         text-decoration: none;
         color: $red-0;
@@ -186,6 +186,11 @@ nav a {
         max-height: 500px;
         max-width: 40vw;
         border: 1px solid black;
+    }
+    iframe {
+        margin: auto;
+        display: block;
+        max-width: 40vw;
     }
 }
 
@@ -283,6 +288,9 @@ body {
 @media only screen and (max-width: 768px) {
     article.site-wrap {
         img {
+            max-width: 70vw;
+        }
+        iframe {
             max-width: 70vw;
         }
         padding: 50px 30px 30px 30px;
