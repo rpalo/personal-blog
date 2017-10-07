@@ -2,7 +2,7 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css?family=Inconsolata|Source+Sans+Pro:300,600');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Yrsa:300,400,600');
 
 /* Colors */
 
@@ -28,11 +28,11 @@ $blue-4: #00030D;
 html {
     box-sizing: border-box;
     background: $blue-1;
-    font-family: "Source Sans Pro", "Verdana", "Arial", "sans-serif";
+    font-family: "Vollkorn", Palatino, Times;
     font-size: 19px;
     letter-spacing: 1.5px;
     line-height: 26px;
-    font-weight: lighter;
+    font-weight: 200;
     position: relative;
     min-height: 100%;
 }
@@ -50,7 +50,7 @@ body {
     max-width: 1100px;
     margin: 100px auto;
     background: white;
-    padding: 70px;
+    padding: 70px 150px;
     text-align: left;
     box-shadow: 0 0 10px 5px rgba(0,0,0,0.5);
 }
@@ -106,7 +106,7 @@ li.logo {
 
 li.logo a {
     color: $red-0;
-    font-family: "Inconsolata", "monospace";
+    font-family: "Open Sans", "monospace";
     text-transform: lowercase;
     font-weight: 600;
     font-size: 25px;
@@ -133,7 +133,7 @@ nav a {
         }
     }
     h1, h2, h3, h4, h5, small {
-        font-family: Inconsolata, monospace;
+        font-family: "Open Sans", monospace;
     }
     h1 {
         border-bottom: 1px solid #CCC;
@@ -196,7 +196,7 @@ nav a {
 
 // Inline code snippets should have a red box
 code {
-    font-size: 80%;
+    font-size: .8em;
     background-color: #FFEEEE;
     padding: 5px;
 }
@@ -204,12 +204,10 @@ code {
 // Big code blocks shouldn't highlight red or have extra padding
 .highlight code {
     background-color: inherit;
-    padding: inherit;
-    font-weight: none;
 }
 
 blockquote {
-    color: #111;
+    color: #333;
     font-weight: 200;
     font-style: italic;
     padding-left: 7vw;
@@ -226,10 +224,9 @@ blockquote {
 
 .highlight {
     //border: 1px solid #CCC;
-    border-radius: 15px;
-    padding: 5px 10px;
     line-height: 20px;
     overflow: scroll;
+    padding: 20px;
 }
 
 .contact-link {
@@ -276,6 +273,9 @@ body {
 
 #right-home-footer {
     flex: 1;
+    p {
+        line-height: 1.7em;
+    }
 }
 
 
@@ -309,7 +309,7 @@ body {
         background: $yellow-1;
         color: $red-0;
         text-align: center;
-        font-family: "Inconsolata", "monospace";
+        font-family: "Open Sans", "monospace";
         text-transform: lowercase;
         font-size: 150%;
 
