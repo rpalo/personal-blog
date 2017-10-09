@@ -129,10 +129,11 @@ Overall, these may not give you a 10x productivity boost, but they are fun and I
 ## Submitted by Awesome People
 
 ```bash
-# Delete trailing whitespace - Ryan Palo
+# First two submitted by me to avoid a sad empty list here
+# Delete trailing whitespace
 $ ruby -pe 'gsub(/\s+$/, "\n")'
 
-# Prints too long lines - Ryan Palo
+# Prints too long lines
 $ ruby -ne 'puts $_ if $_.length > 80'
 ```
 
