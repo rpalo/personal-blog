@@ -203,6 +203,7 @@ code {
 // Big code blocks shouldn't highlight red or have extra padding
 .highlight code {
     background-color: inherit;
+    padding: 0;
 }
 
 blockquote {
