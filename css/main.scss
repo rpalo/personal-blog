@@ -327,3 +327,18 @@ body {
 .contact {
     font-weight: bold;
 }
+
+.post {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #AAA;
+
+    .post-title {
+        font-size: 1.5em;
+    }
+
+    .img-small {
+        max-height: 150px;
+        margin: 5px;
+    }
+}
