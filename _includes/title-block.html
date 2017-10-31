@@ -1,4 +1,13 @@
 <header id="main-header">
     <h1>assert_not magic?</h1>
     <img class="profile" alt="Ryan Palo" src="/img/me.jpg" />
+    <div class="magic-code highlight">
+        {% highlight ruby %}
+        def test_code_isnt_magic
+          code = [:ruby, :python, :javascript, :html, :css, :bash]
+          assert_not code.any? { |language| language.magic? }
+        end
+        {% endhighlight %}
+    </div>
+    <img class="down-arrow" alt="Scroll down..." src="/img/down.png">
 </header>

@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i|Patrick+Hand+SC');
+@import 'variables';
+
+html {
+  font-family: "Lato", Palatino, Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  letter-spacing: 1.5px;
+  line-height: 1.5em;
+}
+
+header {
+  h1 {
+    color: $white;
+    font-family: "Patrick Hand SC", "Courier New";
+    font-size: 3em;
+    line-height: 2.1em;
+    text-shadow: 3px 4px 0 rgba(0,0,0,0.2);
+  }
+
+  .magic-code {
+    text-align: left;
+  }
+
+}
+
+nav {
+  letter-spacing: 1px;
+}
+
+nav a {
+  color: $white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+li.logo a {
+  color: $white;
+  font-family: "Patrick Hand SC", monospace;
+  text-transform: lowercase;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.site-wrap {
+  h1 {
+    font-family: "Patrick Hand SC", Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    line-height: 1.5em;
+    border-bottom: 1px solid #CCC;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  h2 {
+    font-family: "Patrick Hand SC", Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    line-height: 1.5em;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  h3 {
+    font-style: italic;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  small {
+    font-size: 14px;
+    color: #808080;
+  }
+
+  a {
+    text-decoration: none;
+    color: $red-main;
+  }
+
+  // Inline code snippets
+  code {
+    font-size: .8em;
+    background-color: #FFEEEE;
+    padding: 5px;
+  }
+
+  .highlight {
+    line-height: 20px;
+    overflow: scroll;
+    padding: 20px;
+  }
+
+  // Big code blocks
+  .highlight code {
+    background-color: inherit;
+    padding: 0px;
+  }
+
+  blockquote {
+    color: #333;
+    font-style: italic;
+    padding-left: 4vw;
+    border-left: 3px solid #111;
+  }
+}
+
+.contact {
+  font-weight: bold;
+}
+
+.post-title {
+  font-size: 1.5em;
+}
