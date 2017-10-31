@@ -1,5 +1,6 @@
 const nav = document.querySelector('#main-nav');
 let topOfNav = nav.offsetTop;
+let currentScroll;
 
 function fixNav() {
   if (window.scrollY >= topOfNav) {
