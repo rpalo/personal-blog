@@ -13,3 +13,12 @@ const app = new Vue({
     }
   }
 })
+
+document.querySelector('.search').addEventListener('focus', function () {
+  window.scroll({
+    top: this.offsetTop - 100,
+    left: 0,
+    behavior: 'smooth'
+  });
+});
+

@@ -119,6 +119,16 @@ nav a {
     }
 }
 
+.search {
+    font-size: 1.5em;
+    font-family: "Patrick Hand SC", Arial, Helvetica, sans-serif;
+    color: $blue-dark;
+    border: 3px solid $blue-main;
+    width: 80%;
+    display: block;
+    margin: 15px auto;
+}
+
 /* Footer */
 body {
     margin-bottom: 60px;

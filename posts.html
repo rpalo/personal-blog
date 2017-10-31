@@ -7,8 +7,7 @@ description: A list of all of my blog posts
 {% raw %}
 <div id="app">
   <div class="search-wrapper">
-    <label for="search">Search posts:</label>
-    <input type="text" name="search" v-model="search" placeholder="Search posts...">
+    <input class="search" type="text" name="search" v-model="search" placeholder="Search posts...">
   </div>
   <div class="results-wrapper">
     <div class="post" v-for="post in filteredPosts">
