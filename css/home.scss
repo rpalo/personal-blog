@@ -8,13 +8,14 @@
 /* Navigation (Fancy) */
 header {
     text-align: center;
-    height: 50vh;
-    background: url(/img/header_bg.png) bottom center no-repeat;
+    height: 100vh;
+    background: #020509;
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
     
     h1 {
         color: white;
@@ -25,6 +26,25 @@ header {
     }
     .profile {
         border-radius: 50%;
+    }
+    .magic-code {
+        text-align: left;
+    }
+
+    @keyframes bounce {
+        0% { transform: translate(-20px, 0px); }
+        50% { transform: translate(-20px, -20px); }
+        100% { tranform: translate(-20px, 0px); }
+    }
+
+    .down-arrow {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translate(-20px, 0px);
+        width: 40px;
+        height: 20px;
+        animation: bounce 2s infinite;
     }
     
 
