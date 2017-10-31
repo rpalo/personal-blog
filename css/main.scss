@@ -4,18 +4,17 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Lato:400,400i|Patrick+Hand+SC');
 @import 'variables';
+@import 'typography';
+@import 'mobile';
+@import 'media';
+@import 'syntax';
 
 /* Main */
 html {
     box-sizing: border-box;
     background: $white;
-    font-family: "Lato", Palatino, Arial, Helvetica, sans-serif;
-    font-size: 19px;
-    letter-spacing: 1.5px;
-    font-weight: 200;
     position: relative;
     min-height: 100%;
-    line-height: 1.5em;
 }
 
 body {
@@ -27,15 +26,6 @@ body {
     box-sizing: inherit;
 }
 
-.site-wrap {
-    max-width: 1100px;
-    margin: 100px auto;
-    background: white;
-    padding: 70px 150px;
-    text-align: left;
-    box-shadow: 0 0 10px 5px rgba(0,0,0,0.5);
-}
-
 /* Navigation */
 nav {
     background: $blue-dark;
@@ -44,22 +34,6 @@ nav {
     // position: fixed;
     box-shadow: 0 5px 0 rgba(0,0,0,0.1);
     z-index: 1;
-    letter-spacing: 1px;
-}
-
-@media only screen and (max-width: 768px) {
-    nav {
-        position: relative;
-    }
-    nav.fixed-nav {
-        position: relative;
-    }
-    .site-wrap {
-        margin-top: 0px;
-    }
-    nav ul {
-        flex-direction: column;
-    }
 }
 
 nav ul {
@@ -109,73 +83,28 @@ li.logo {
     background-color: $black;
 }
 
-li.logo a {
-    color: $white;
-    font-family: "Patrick Hand SC", "monospace";
-    text-transform: lowercase;
-    font-weight: 400;
-    font-size: 25px;
-    padding: 0px;
-}
-
-
 nav a {
-    text-decoration: none;
     padding: 20px;
     display: inline-block;
-    color: $white;
-    text-transform: uppercase;
 }
 
 /* Main Content */
 .site-wrap {
+    max-width: 1100px;
+    margin: 100px auto;
+    background: white;
+    padding: 70px 150px;
+    text-align: left;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.5);
+
     #cover {
         max-width: 100%;
-        .cover-image {
-            border: none;
-            max-width: 100%;
-            max-height: 50vh;
-        }
-    }
-    h1, h2, h3, h4, h5, small {
-        font-family: "Patrick Hand SC", Arial, Helvetica, sans-serif;
-    }
-    h1 {
-        border-bottom: 1px solid #CCC;
-        padding-top: 10px;
-        padding-bottom: 20px;
-        font-size: 3em;
-        line-height: 2.1em;
     }
 
-    h2 {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        font-size: 2em;
-        line-height: 2.1em;
-        text-align: center;
-    }
-
-    h3 {
-        font-family: "Lato", Arial, Helvetica, sans-serif;
-        font-style: italic;
-        padding-top: 5px;
-        padding-bottom: 10px;
-        font-size: 1.5em;
-        text-align: center;
-    }
-    small {
-        font-size: 14px !important;
-        color: #808080;
-    }
     .post-list {
         list-style: none;
     }
 
-    a {
-        text-decoration: none;
-        color: $red-main;
-    }
     ul {
         list-style-type: none;
         padding-left: 0;
@@ -188,57 +117,6 @@ nav a {
             padding-bottom: 10px;
         }
     }
-    img {
-        margin: auto;
-        display: block;
-        max-height: 500px;
-        max-width: 40vw;
-    }
-    iframe {
-        margin: auto;
-        display: block;
-        max-width: 40vw;
-    }
-}
-
-// Inline code snippets should have a red box
-code {
-    font-size: .8em;
-    background-color: #FFEEEE;
-    padding: 5px;
-}
-
-// Big code blocks shouldn't highlight red or have extra padding
-.highlight code {
-    background-color: inherit;
-    padding: 0;
-}
-
-blockquote {
-    color: #333;
-    font-weight: 200;
-    font-style: italic;
-    padding-left: 4vw;
-    border-left: 3px solid #111;
-}
-
-@media only screen and (max-width: 768px) {
-    blockquote {
-        padding-left: 3vw;
-        margin-left: 0;
-        margin-right: 0;
-    }
-}
-
-.highlight {
-    //border: 1px solid #CCC;
-    line-height: 20px;
-    overflow: scroll;
-    padding: 20px;
-}
-
-.contact-link {
-    max-width: 50px;
 }
 
 /* Footer */
@@ -261,92 +139,9 @@ body {
     color: #CCC;
 }
 
-#home-footer {
-    display: flex;
-}
-
-@media only screen and (max-width: 768px) {
-    #home-footer {
-        flex-direction: column;
-    }
-}
-
-#left-home-footer {
-    flex: 1;
-}
-
-#center-home-footer {
-    flex: 1;
-}
-
-#right-home-footer {
-    flex: 1;
-    p {
-        line-height: 1.7em;
-    }
-}
-
-
-// Mobile optimization
-.mobile-home {
-    display: none;
-}
-
-
-@media only screen and (max-width: 768px) {
-    article.site-wrap {
-        img {
-            max-width: 70vw;
-        }
-        iframe {
-            max-width: 70vw;
-        }
-        padding: 50px 30px 30px 30px;
-    }
-    .highlight code {
-        //font-size: 70% !important;
-        line-height: 70%;
-        text-align: left;
-        letter-spacing: 0px;
-    }
-    .logo {
-        display: none;
-    }
-    .mobile-home {
-        display: block;
-        background: $black;
-        color: $white;
-        text-align: center;
-        font-family: "Patrick Hand SC", monospace;
-        font-size: 2.5em;
-        line-height: 1.5em;
-
-    }
-    .site-wrap h1 {
-        font-size: 2.5em;
-        line-height: 2.1em;
-    }
-    .site-wrap h2 {
-        font-size: 1.5em;
-        line-height: 1.25em;
-    }
-}
-
-.contact {
-    font-weight: bold;
-}
 
 .post {
     padding: 10px;
     text-align: left;
     border-bottom: 1px solid #AAA;
-
-    .post-title {
-        font-size: 1.5em;
-    }
-
-    .img-small {
-        max-height: 150px;
-        margin: 5px;
-    }
 }
