@@ -134,11 +134,11 @@ OK.  Do me a favor and imagine the input list as a series of connected nodes: a 
 
 Study that list for a minute.  Get a piece of paper and pencil and try some more.  [3, 1, 2, 4, 1].  [8, 6, 4, 2, 1, 2, 5, 3, 7].  [2, 1, 1, 3].  What do those look like?  Do you start to see patterns?  I mean, besides the pattern that I suck at freehand diagrams?
 
-![Diagram of the first example](/img/cake-nodes-2.png)
+![Diagram of the first example](/img/cake-nodes-2.PNG)
 
-![Diagram of the second example](/img/cake-nodes-3.png)
+![Diagram of the second example](/img/cake-nodes-3.PNG)
 
-![Diagram of the third example](/img/cake-nodes-4.png)
+![Diagram of the third example](/img/cake-nodes-4.PNG)
 
 Here's some things to note:
 
