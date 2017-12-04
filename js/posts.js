@@ -1,8 +1,11 @@
 
+var params = new URLSearchParams(location.search);
+
+
 const app = new Vue({
   el: '#app',
   data: {
-    search: '',
+    search: params.has('q') ? params.get('q') : '',
     post_list: posts
   },
   computed: {
