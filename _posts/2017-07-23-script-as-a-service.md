@@ -2,7 +2,7 @@
 title: Script as a Service
 layout: page
 description: Setting up a python script to run for a long time on a server
-cover-image: python-service.jpg
+cover_image: python-service.jpg
 tags: python sysadmin linux
 ---
 
