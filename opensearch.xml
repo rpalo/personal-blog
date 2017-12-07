@@ -1,7 +1,10 @@
-<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
-  <ShortName>assert_not magic</ShortName>
-  <Description>Search Posts</Description>
-  <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">favicon-16x16.png</Image>
-  <Url type="text/html" method="get" template="https://assertnotmagic.com/posts/?q={searchTerms}"/>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://mozilla.org/2006/browser/search/">
+	<ShortName>Assert_Not Magic</ShortName>
+  	<Description>Search blog posts on assert_not magic</Description>
+  	<InputEncoding>UTF-8</InputEncoding>
+  	<Image width="16" height="16" type="image/png">https://assertnotmagic.com/favicon-16x16.png</Image>
+  	<Url type="text/html" method="get" template="https://assertnotmagic.com/posts/?q={searchTerms}" />
+  	<Url type="application/opensearchdescription+xml" rel="self" template="https://assertnotmagic.com/opensearch.xml" />
+  	<SearchForm>https://assertnotmagic.com/posts/</SearchForm>
+  	<moz:SearchForm>https://assertnotmagic.com/posts/</moz:SearchForm>
 </OpenSearchDescription>
