@@ -81,3 +81,5 @@ I'd like to pick one (or two… or three, tops, I promise!) side projects to wor
 5. Be disciplined about documenting my process along the way so I remember where I am and what I need to do next.  This will also help me (and everybody else!) keep me accountable.
 
 Wish me luck!
+
+*Cover Image Credit: [Lisa Lalama](https://montessorimessage.net/2016/10/27/reflection/)*
