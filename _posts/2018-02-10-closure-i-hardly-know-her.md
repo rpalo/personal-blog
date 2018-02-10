@@ -2,13 +2,13 @@
 layout: page
 title: Closure? I Hardly Know Her!
 description: Why closures are useful, even if you don't notice that you're using them.
-tags: go python functional
-cover_image:
+tags: python functional
+cover_image: closures.png
 ---
 
-# Closure? I Hardly Know Her!
+*Cover image credit: [this amazing StackOverflow answer](https://stackoverflow.com/a/29558498/4100442)*.
 
-I've learned about closures a few different times, and each time, I've come away feeling like I get it, but I don't necessarily understand why people make such a big deal out of them.  Yeah, hooray, you get functions that can persist their data!  I've seen people post things like, "If you're not using closures, you're really missing out."  I think I've finally figured out why people are so excited, and why, up until last week, I haven't really been that excited.  This post will explain what closures are, when you might want to use them, and why it took me so long to get why they're special.
+I've learned about closures a few different times, and each time, I've come away feeling like I get it, but I don't necessarily understand why people make such a big deal out of them.  Yeah, hooray, you get functions that can persist their data!  I've seen people post things like, "If you're not using closures, you're really missing out."  I think I've finally figured out why people are so excited, and why I was confused.  This post will explain what closures are, when you might want to use them, and why it took me so long to get why they're special.
 
 ## What are Closures
 
@@ -35,7 +35,7 @@ zoo_a("panda")
 # => ["zebra", "monkey", "panda"]
 ```
 
-The `build_zoo` function is a kind of "factory" that creates a *scope* and defines a function within that scope.  Then it gives the function *that still has access to that scope (and the variables therein)* to you.  And every time you call this `build_zoo` function, it creates a brand new scope, unconnected to any of the other scopes.  That's why `zoo_a` and `zoo_b` were not able to affect each other when they were called!
+The `build_zoo` function is a kind of "factory" that creates a *scope* and defines a function within that scope.  Then it gives the function *that still has access to that scope (and the variables therein)* to you.  After the `build_zoo` function ends, it keeps the stack frame and variables defined (like `animals`) available to the returned `add_animal` function, for later reference.  And every time you call this `build_zoo` function, it creates a brand new scope, unconnected to any of the other scopes.  That's why `zoo_a` and `zoo_b` were not able to affect each other when they were called!
 
 ### Side Note: Python and Scopes
 
@@ -66,7 +66,7 @@ def build_incrementer():
     return increment
 ```
 
-This lets you reach out and modify this value.  You could also use global, but we're not anarchists, so we won't.
+This lets you reach out and modify this value.  You could also use global, but we're not animals, so we won't.
 
 ## OK, but So What?
 
@@ -94,7 +94,7 @@ next(inc_b)
 # => 1
 ```
 
-This method is very "Pythonic".  It has no inner functions (that you know of), has a reasonably easy-to-discern flow-path, and (provided you understand generators), gets the job done.
+This method is very "Pythonic".  It has no inner functions (that you know of), has a reasonably easy-to-discern flow-path, and (provided you understand generators), and gets the job done.
 
 ### Build an Object
 
@@ -180,25 +180,25 @@ class Incrementer:
 classy = Incrementer()
 
 ### Functional Closure
-sys.getsizeof(build_function_incrementer)
+sys.getsizeof(build_function_incrementer) # The factory
 # => 136
-sys.getsizeof(funky)
+sys.getsizeof(funky) # The individual closure
 # => 136
 
 ### Generator Function
-sys.getsizeof(build_generator_incrementer)
+sys.getsizeof(build_generator_incrementer) # The factory
 # => 136
-sys.getsizeof(jenny)
+sys.getsizeof(jenny) # The individual generator
 # => 88
 
 ### Class
-sys.getsizeof(Incrementer)
+sys.getsizeof(Incrementer) # The factory (class)
 # => 1056
-sys.getsizeof(classy)
+sys.getsizeof(classy) # The instance
 # => 56
 ```
 
-Surprisingly, the generator function's output actually ends up being smaller.  But both the generator function, and the traditional closure are much smaller than creating a class.
+Surprisingly, the generator function's output actually ends up being the smallest.  But both the generator function, and the traditional closure are much smaller than creating a class.
 
 ### They're Fast
 
@@ -252,3 +252,11 @@ Once again, the class method comes in at the bottom, but this time we see a marg
 ### They're Available
 
 This is the one that took me the longest to find out.  *Not all languages are as lucky as Python.*  (Excuse me while I prepare my inbox for a deluge of hate mail.)  In Python, we are lucky enough to have Generators as well as a number of ways to create them, like Generator functions.  Honestly, if I had to choose from the above methods, and I was writing Python, I'd actually recommend the Generator Function method, since it's easier to read and reason about.  
+
+However, there are a lot of languages that aren't as "batteries included."  This can actually be a benefit if you want a small application size, or if you're constrained somehow.  In these cases, as long as your language supports creating functions, you should be able to get all the benefits of Generators (lazy evaluation, memoization, the ability to iterate through a possibly infinite series…) without any fancy features.
+
+In JavaScript, you can now use [a version of generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators), but that's ES6 functionality that hasn't always been there.  As far as I can tell, this isn't a built-in functionality in Go either (although some research shows that it might be more idiomatic to [use channels instead](https://stackoverflow.com/questions/11385556/python-style-generators-in-go)).  I'm sure there are many other lower-level languages as well where a simple function closure is easier than trying to write your own Generator.
+
+## Share Your Wisdom!
+
+Since I don't have a whole lot of experience with low-level languages, the pros and cons of closures are new to me.  If you have some better explanations or any examples of when a closure is the perfect tool for the job, please [let me know about it](https://twitter.com/paytastic) and I'll do my best to broadcast your wisdom.
