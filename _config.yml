@@ -16,7 +16,7 @@
 title: assert_not magic?
 email: ryan@thepalos.com
 description: > # this means to ignore newlines until "baseurl:"
-  I'm currently/always doing a lot of learning, and it seems like writing it down in blog form is a good idea to help cement the things I'm learning. Also, all the cool kids are doing it.  My goal is once every two weeks or better.
+  Programming blog by Ryan Palo.  Code is not magic, and anyone can do it.  Python, Ruby, JavaScript, shell scripting, systems, the web, and more!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://assertnotmagic.com" # the base hostname & protocol for your site
 twitter_username: paytastic
@@ -34,7 +34,18 @@ kramdown:
 timezone: America/Los_Angeles
 
 # File Inclusions
-exclude: [README.md,blog.sublime-project, blog.sublime-workspace,deploy.sh, notes.md]
+exclude: [
+  README.md,
+  blog.sublime-project,
+  blog.sublime-workspace,
+  deploy.sh,
+  maketag.sh,
+  secrets.sh,
+  notes.md,
+  .gitignore,
+  Gemfile,
+  Gemfile.lock,
+]
 
 # Gems
 plugins:

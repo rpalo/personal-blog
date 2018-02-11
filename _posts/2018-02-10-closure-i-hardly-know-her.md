@@ -20,7 +20,7 @@ def build_zoo():
     def add_animal(animal):
         animals.append(animal)
         return animals
-    return increment
+    return add_animal
 
 zoo_a = build_zoo()
 zoo_b = build_zoo()
@@ -34,6 +34,8 @@ zoo_b("snek")
 zoo_a("panda")
 # => ["zebra", "monkey", "panda"]
 ```
+
+*Thanks to [@Doshirae](https://twitter.com/Doshirae) and [Nicholas Lee](https://dev.to/nixlend) for pointing out a typo in the `return` statement!*
 
 The `build_zoo` function is a kind of "factory" that creates a *scope* and defines a function within that scope.  Then it gives the function *that still has access to that scope (and the variables therein)* to you.  After the `build_zoo` function ends, it keeps the stack frame and variables defined (like `animals`) available to the returned `add_animal` function, for later reference.  And every time you call this `build_zoo` function, it creates a brand new scope, unconnected to any of the other scopes.  That's why `zoo_a` and `zoo_b` were not able to affect each other when they were called!
 
