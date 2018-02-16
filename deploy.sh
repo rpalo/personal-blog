@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 name=$1
+JEKYLL_ENV=production
+bundle exec jekyll build
 git add .
 git commit -m "$name"
 git push
@@ -17,4 +19,5 @@ curl -X DELETE "https://api.cloudflare.com/client/v4/zones/13f84c3ce59abf8d0e7a6
      -H "Content-Type: application/json" \
      --data '{"files":["https://assertnotmagic.com/js/posts_data.js"]}'
 
+echo ""
 echo "Complete!"
