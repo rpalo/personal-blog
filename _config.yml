@@ -40,6 +40,7 @@ exclude: [
   blog.sublime-workspace,
   deploy.sh,
   maketag.sh,
+  purge_cache.sh,
   secrets.sh,
   notes.md,
   .gitignore,
