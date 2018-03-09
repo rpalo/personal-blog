@@ -22,6 +22,11 @@ My DM's are open, so probably the fastest and easiest way to provide quick feedb
     <img class="contact-link" alt="Ryan's Twitter" src="/img/twitter_logo.png">
 </a>.
 
+I cross-post most of my articles on <a href="https://dev.to/rpalo">Dev.to <img class="contact-link" src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="Ryan Palo's DEV Profile" height="30" width="30" />
+</a> as well.  It's really a great community, and I can't recommend it enough for people of any skill/interest level.
+
+I'm also a contributor to <a href="https://simpleprogrammer.com/author/ryanpalo/">Simple Programmer <img class="contact-link" alt="Ryan Palo's Simple Programmer page" src="/img/sp-badge.png" height="30px" width="30px"></a>.
+
 I've never really gotten much use out of it, but I keep my <a href="https://www.linkedin.com/in/ryan-palo-eit-cswp-9461194b
 ">LinkedIn account 
     <img class="contact-link" alt="Ryan's Linkedin" src="/img/linkedin_logo.png">
