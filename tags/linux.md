@@ -1,5 +1,5 @@
 ---
 layout: tagpage
 tag: linux
-permalink: /tags/linux
+permalink: /tags/linux/
 ---

@@ -1,5 +1,5 @@
 ---
 layout: tagpage
 tag: fun
-permalink: /tags/fun
+permalink: /tags/fun/
 ---

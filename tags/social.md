@@ -1,5 +1,5 @@
 ---
 layout: tagpage
 tag: social
-permalink: /tags/social
+permalink: /tags/social/
 ---

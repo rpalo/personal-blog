@@ -1,5 +1,5 @@
 ---
 layout: tagpage
 tag: git
-permalink: /tags/git
+permalink: /tags/git/
 ---

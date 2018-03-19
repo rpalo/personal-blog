@@ -1,5 +1,5 @@
 ---
 layout: tagpage
 tag: update
-permalink: /tags/update
+permalink: /tags/update/
 ---

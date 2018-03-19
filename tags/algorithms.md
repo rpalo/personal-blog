@@ -1,5 +1,5 @@
 ---
 layout: tagpage
 tag: algorithms
-permalink: /tags/algorithms
+permalink: /tags/algorithms/
 ---

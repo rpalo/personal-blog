@@ -18,7 +18,7 @@ module Jekyll
         ---
         layout: tagpage
         tag: #{tag}
-        permalink: /tags/#{tag}
+        permalink: /tags/#{tag}/
         ---
       HEREDOC
       File.open("tags/#{tag}.md", "w") do |f|

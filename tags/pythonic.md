@@ -1,5 +1,5 @@
 ---
 layout: tagpage
 tag: pythonic
-permalink: /tags/pythonic
+permalink: /tags/pythonic/
 ---

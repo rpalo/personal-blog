@@ -1,5 +1,5 @@
 ---
 layout: tagpage
 tag: math
-permalink: /tags/math
+permalink: /tags/math/
 ---

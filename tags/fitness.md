@@ -1,5 +1,5 @@
 ---
 layout: tagpage
 tag: fitness
-permalink: /tags/fitness
+permalink: /tags/fitness/
 ---

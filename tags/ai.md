@@ -1,5 +1,5 @@
 ---
 layout: tagpage
 tag: ai
-permalink: /tags/ai
+permalink: /tags/ai/
 ---

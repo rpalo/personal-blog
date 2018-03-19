@@ -1,5 +1,5 @@
 ---
 layout: tagpage
 tag: ruby
-permalink: /tags/ruby
+permalink: /tags/ruby/
 ---

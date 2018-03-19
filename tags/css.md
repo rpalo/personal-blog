@@ -1,5 +1,5 @@
 ---
 layout: tagpage
 tag: css
-permalink: /tags/css
+permalink: /tags/css/
 ---

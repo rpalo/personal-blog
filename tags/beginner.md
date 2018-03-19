@@ -1,5 +1,5 @@
 ---
 layout: tagpage
 tag: beginner
-permalink: /tags/beginner
+permalink: /tags/beginner/
 ---

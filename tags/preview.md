@@ -1,5 +1,5 @@
 ---
 layout: tagpage
 tag: preview
-permalink: /tags/preview
+permalink: /tags/preview/
 ---

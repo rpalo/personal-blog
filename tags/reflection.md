@@ -1,5 +1,5 @@
 ---
 layout: tagpage
 tag: reflection
-permalink: /tags/reflection
+permalink: /tags/reflection/
 ---

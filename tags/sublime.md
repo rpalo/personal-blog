@@ -1,5 +1,5 @@
 ---
 layout: tagpage
 tag: sublime
-permalink: /tags/sublime
+permalink: /tags/sublime/
 ---

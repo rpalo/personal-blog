@@ -1,5 +1,5 @@
 ---
 layout: tagpage
 tag: r
-permalink: /tags/r
+permalink: /tags/r/
 ---

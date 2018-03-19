@@ -1,5 +1,5 @@
 ---
 layout: tagpage
 tag: teaching
-permalink: /tags/teaching
+permalink: /tags/teaching/
 ---

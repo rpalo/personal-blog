@@ -1,5 +1,5 @@
 ---
 layout: tagpage
 tag: oss
-permalink: /tags/oss
+permalink: /tags/oss/
 ---

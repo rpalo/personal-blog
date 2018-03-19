@@ -1,5 +1,5 @@
 ---
 layout: tagpage
 tag: performance
-permalink: /tags/performance
+permalink: /tags/performance/
 ---
