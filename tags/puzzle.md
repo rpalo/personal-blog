@@ -1,5 +1,5 @@
 ---
 layout: tagpage
 tag: puzzle
-permalink: /tags/puzzle/
+permalink: /tags/puzzle
 ---

@@ -1,5 +1,5 @@
 ---
 layout: tagpage
 tag: animations
-permalink: /tags/animations/
+permalink: /tags/animations
 ---

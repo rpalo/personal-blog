@@ -1,5 +1,5 @@
 ---
 layout: tagpage
 tag: functional
-permalink: /tags/functional/
+permalink: /tags/functional
 ---

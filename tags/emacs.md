@@ -1,5 +1,5 @@
 ---
 layout: tagpage
 tag: emacs
-permalink: /tags/emacs/
+permalink: /tags/emacs
 ---

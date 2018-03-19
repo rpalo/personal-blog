@@ -2,7 +2,7 @@
 layout: page
 title: Accelerated Vim-Provement
 description: A quick tip to help pick up Vim faster by freeing yourself of crutches
-tags: vim editor encouragement
+tags: vim editors encouragement
 cover_image: hjkl.jpg
 ---
 

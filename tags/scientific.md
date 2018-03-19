@@ -1,5 +1,5 @@
 ---
 layout: tagpage
 tag: scientific
-permalink: /tags/scientific/
+permalink: /tags/scientific
 ---

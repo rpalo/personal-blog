@@ -1,5 +1,5 @@
 ---
 layout: tagpage
 tag: tools
-permalink: /tags/tools/
+permalink: /tags/tools
 ---

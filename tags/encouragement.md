@@ -1,5 +1,5 @@
 ---
 layout: tagpage
 tag: encouragement
-permalink: /tags/encouragement/
+permalink: /tags/encouragement
 ---

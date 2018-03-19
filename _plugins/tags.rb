@@ -1,18 +1,35 @@
+require "set"
+
 module Jekyll
-  Jekyll::Hooks.register :site, :pre_render do |site|
-    site.tags.keys.each do |tag|
-      unless File.exist?("tags/#{tag}.md")
-        content = <<~HEREDOC
-          ---
-          layout: tagpage
-          tag: #{tag}
-          permalink: /tags/#{tag}
-          ---
-        HEREDOC
-        File.open("tags/#{tag}.md", "w") do |f|
-          f.write(content)
-        end
+  # Syncs the tagpages with the tags in all of my posts
+  Jekyll::Hooks.register :site, :post_read do |site|
+    tags = Set.new(site.tags.keys)
+    tagpage_filenames = Dir.children("tags").map do |filename|
+      filename.gsub(".md", "")
+    end
+    tagpages = Set.new(tagpage_filenames)
+    tags_without_pages = tags - tagpages
+    pages_without_tags = tagpages - tags
+
+    # Create a tagpage for any tag without a page
+    tags_without_pages.each do |tag|
+      puts "Creating new tagpage for: #{tag}"
+      content = <<~HEREDOC
+        ---
+        layout: tagpage
+        tag: #{tag}
+        permalink: /tags/#{tag}
+        ---
+      HEREDOC
+      File.open("tags/#{tag}.md", "w") do |f|
+        f.write(content)
       end
+    end
+
+    # Delete the tagpage for any page that doesn't have any tags
+    pages_without_tags.each do |page|
+      puts "Removing tagpage for nonexistent tag: #{page}.  Ignore any Ruby errors reported."
+      File.delete("tags/#{page}.md")
     end
   end
 end

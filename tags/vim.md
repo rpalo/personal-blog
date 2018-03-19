@@ -1,5 +1,5 @@
 ---
 layout: tagpage
 tag: vim
-permalink: /tags/vim/
+permalink: /tags/vim
 ---

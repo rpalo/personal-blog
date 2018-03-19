@@ -1,5 +1,5 @@
 ---
 layout: tagpage
 tag: struct
-permalink: /tags/struct/
+permalink: /tags/struct
 ---

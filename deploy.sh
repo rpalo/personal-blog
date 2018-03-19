@@ -10,7 +10,7 @@ cd _site
 git add .
 git commit -m "$name"
 git push
-sleep 5
+sleep 10
 cd ..
 source secrets.sh
 echo "Purging posts list cache"

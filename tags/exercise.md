@@ -1,5 +1,5 @@
 ---
 layout: tagpage
 tag: exercise
-permalink: /tags/exercise/
+permalink: /tags/exercise
 ---

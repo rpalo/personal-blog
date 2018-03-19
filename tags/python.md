@@ -1,5 +1,5 @@
 ---
 layout: tagpage
 tag: python
-permalink: /tags/python/
+permalink: /tags/python
 ---

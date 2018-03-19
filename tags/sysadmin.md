@@ -1,5 +1,5 @@
 ---
 layout: tagpage
 tag: sysadmin
-permalink: /tags/sysadmin/
+permalink: /tags/sysadmin
 ---

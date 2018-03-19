@@ -1,5 +1,5 @@
 ---
 layout: tagpage
 tag: vue
-permalink: /tags/vue/
+permalink: /tags/vue
 ---

@@ -1,5 +1,5 @@
 ---
 layout: tagpage
 tag: browser
-permalink: /tags/browser/
+permalink: /tags/browser
 ---

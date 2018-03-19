@@ -1,5 +1,5 @@
 ---
 layout: tagpage
 tag: gtd
-permalink: /tags/gtd/
+permalink: /tags/gtd
 ---
