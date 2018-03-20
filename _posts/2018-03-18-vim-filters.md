@@ -12,13 +12,13 @@ Quick tip time!  Let's talk about Vim filters.  This is a way to execute any ext
 
 This is the simplest method:
 
-```vimscript
+```vim
 :r !ls
 ```
 
 This command will read the results of `ls` into your buffer at your cursor location.  You can also specify the specific line to insert after.  The next command will read the results of the `ls` command into your current buffer after line 4.
 
-```vimscript
+```vim
 :4r !ls
 ```
 
@@ -26,7 +26,7 @@ This command will read the results of `ls` into your buffer at your cursor locat
 
 You can also send lines of your buffer out to be replaced with the results of the command.  A common thing to do is to operate on the whole buffer you're working on.
 
-```vimscript
+```vim
 :%!sort
 ```
 
@@ -44,7 +44,7 @@ I __mean__ it.
 
 But something's just not quite there.  It needs some more zoom -- some more whammy!  Try combining it with a [slick Ruby one liner!](https://assertnotmagic.com/2017/10/05/smooth-one-liners/)
 
-```vimscript
+```vim
 :%!ruby -ne 'puts $_.upcase'
 ```
 
@@ -60,7 +60,7 @@ I __MEAN__ IT.
 
 This will work with any command.  You can use shell commands, or you can run it through a Python or Node script.  It gives you the power to select the best (or your favorite) tool for the job, instead of locking you into Vim's capabilities alone.  And you can use other motions if you just want to replace a portion of your buffer.
 
-```vimscript
+```vim
 :!!ruby -ne 'puts $_.upcase'
 ```
 
@@ -68,7 +68,7 @@ Two exclamation points will operate on the current line.
 
 It also works on visually selected lines.  Select a couple lines in visual mode:
 
-```vimscript
+```vim
 v         " Visual mode activated
 jj        " Select next two lines
 :!sort    " Sorts the lines that were selected.

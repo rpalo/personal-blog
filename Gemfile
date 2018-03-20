@@ -6,3 +6,5 @@ gem "jekyll"
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 gem "rouge"
 gem 'jekyll-autoprefixer'
+gem "babel-transpiler"
+gem "uglifier"

@@ -84,15 +84,9 @@ li.logo a {
   code {
     font-size: .8em;
     background-color: #FFEEEE;
-    padding: 5px;
+    //padding: 5px;
   }
-
-  .highlight {
-    line-height: 20px;
-    overflow: scroll;
-    padding: 20px;
-  }
-
+  
   // Big code blocks
   .highlight code {
     background-color: inherit;

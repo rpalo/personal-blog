@@ -14,7 +14,7 @@ Let's say that you're just like me.  You've been working on a web project: HTML,
 
 Let's assume you've got a project laid out like this:
 
-```
+```text
 my-dope-project
 |- README.md
 |- src
