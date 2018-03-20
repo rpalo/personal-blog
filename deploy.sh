@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 name=$1
-JEKYLL_ENV=production
+export JEKYLL_ENV=production
 bundle exec jekyll build
 git add .
 git commit -m "$name"
