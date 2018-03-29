@@ -17,6 +17,10 @@
       display: none;
     }
 
+    table {
+      display: none;
+    }
+
     .mobile-home {
       display: block;
       background: $black;
@@ -44,8 +48,9 @@
     }
 
     .site-wrap {
-      margin-top: 0px;
+      margin: auto;
       padding: 20px;
+      max-width: 100vw;
 
       h1 {
         font-size: 2.5em;

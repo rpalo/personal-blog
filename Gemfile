@@ -8,3 +8,5 @@ gem "rouge"
 gem 'jekyll-autoprefixer'
 gem "babel-transpiler"
 gem "uglifier"
+gem "tzinfo"
+gem "tzinfo-data"

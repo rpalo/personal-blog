@@ -134,6 +134,25 @@ nav a {
     margin: 15px auto;
 }
 
+table {
+    margin: auto;
+    font-size: .8em;
+    background-color: $black;
+}
+
+thead {
+    background-color: lighten($grey, 10%);
+}
+
+th {
+    padding: 5px 10px;
+}
+
+td {
+    text-align: right;
+    background-color: $white;
+}
+
 /* Footer */
 body {
     margin-bottom: 60px;
