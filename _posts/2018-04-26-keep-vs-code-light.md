@@ -36,7 +36,13 @@ Now you are fast.  You are sleek.  *You.  Are.  Speed.*
 
 ## OK, OK, Not All of Them
 
-In my opinion, there are two kinds of extensions.  The first are language support extensions.  As I pick up a new language, I discover there's an extension that makes writing it better.  Python, Go, Ruby, language-specific linting, prettifying, snippets, and intellisense.  These are the ones that you want to disable.  The other kind are the general developer happiness extensions.  Things like [journaling support](https://marketplace.visualstudio.com/items?itemName=pajoma.vscode-journal), [colored bracket matchers](https://marketplace.visualstudio.com/items?itemName=2gua.rainbow-brackets), [Star Wars-based themes](https://marketplace.visualstudio.com/items?itemName=dustinsanders.an-old-hope-theme-vscode), and, of course, [emoji support](https://marketplace.visualstudio.com/items?itemName=Perkovec.emoji).  Feel free to leave these enabled all the time.  You deserve to be happy.
+In my opinion, there are two kinds of extensions.  The first are language support extensions.  As I pick up a new language, I discover there's an extension that makes writing it better.  Python, Go, Ruby, language-specific linting, prettifying, snippets, and intellisense.  
+
+Apparently, a good portion of these are set to only activate when you're working on a file with that particular language.  (Thanks! [@SirWindfield](https://dev.to/sirwindfield)!)  However, some less well behaved ones aren't set up this way.  You can check when an extension is set to activate by looking in your extensions directory.  On my system, it's at `~/.vscode/extensions/`.  You'll see a directory for each extension.  If you look into an extension's `package.json`, you'll likely see a key for `activationEvents`.  Well-behaved extensions will only activate on certain filetypes, commands, and terminal activities.  Troublemakers will simply have an innocuous little "*".  These are the ones you want to disable.
+
+If this seems like too much work, just do what I do and disable all of these language-specific ones.
+
+The other kind of extensions are the general developer happiness extensions.  Things like [journaling support](https://marketplace.visualstudio.com/items?itemName=pajoma.vscode-journal), [colored bracket matchers](https://marketplace.visualstudio.com/items?itemName=2gua.rainbow-brackets), [Star Wars-based themes](https://marketplace.visualstudio.com/items?itemName=dustinsanders.an-old-hope-theme-vscode), and, of course, [emoji support](https://marketplace.visualstudio.com/items?itemName=Perkovec.emoji).  Feel free to leave these enabled all the time.  You deserve to be happy.
 
 ## But What if I Want My Extensions?
 
@@ -50,3 +56,4 @@ Now you get the full power of your development environment, and your computer lo
 
 Do you have some favorite extensions?  Any that are a little obscure or don't get a lot of love?  Let me know about them.  I'm always looking for another extension to add to my list.  I might even leave it enabled.
 
+*Edit 4/28/18: Updated some info on when extensions activate themselves, thanks to [@SirWindfield](https://dev.to/sirwindfield).*
