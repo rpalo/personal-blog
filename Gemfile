@@ -10,3 +10,8 @@ gem "babel-transpiler"
 gem "uglifier"
 gem "tzinfo"
 gem "tzinfo-data"
+gem "cloudinary"
+
+group :jekyll_plugins do
+  gem 'jekyll-cloudinary'
+end
