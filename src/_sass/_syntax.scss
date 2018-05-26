@@ -1,0 +1,219 @@
+@import 'variables';
+
+.highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight span.c, .highlight .cd {
+  color: $grey;
+  font-style: italic;
+}
+
+.highlight .p {
+  color: $yellow-main;
+}
+.highlight .cm {
+  color: $grey;
+  font-style: italic;
+}
+.highlight .c1 {
+  color: $grey;
+  font-style: italic;
+}
+.highlight .cp {
+  color: $grey;
+  font-weight: normal;
+}
+.highlight .cs {
+  color: $grey;
+  font-weight: normal;
+  font-style: italic;
+}
+.highlight .err {
+  color: $red-main;
+  background-color: $black;
+}
+.highlight .gi {
+  color: $white;
+  background-color: $black;
+}
+.highlight .gd {
+  color: $white;
+  background-color: $black;
+}
+.highlight .ge {
+  color: #000000;
+  font-style: italic;
+}
+.highlight .gr {
+  color: $red-main;
+}
+.highlight .gt {
+  color: $red-main;
+}
+.highlight .gh {
+  color: $grey;
+}
+.highlight .go {
+  color: $grey;
+}
+.highlight .gp {
+  color: $grey;
+}
+.highlight .gs {
+  font-weight: normal;
+}
+.highlight .gu {
+  color: $grey;
+}
+.highlight .k, .highlight .kv {
+  color: $green-main;
+  font-weight: normal;
+}
+.highlight .kc {
+  color: $blue-main;
+  font-weight: normal;
+}
+.highlight .kd {
+  color: $blue-main;
+  font-weight: normal;
+}
+.highlight .kp {
+  color: $blue-main;
+  font-weight: normal;
+}
+.highlight .kr {
+  color: $blue-main;
+  font-weight: normal;
+}
+.highlight .kt {
+  color: $blue-main;
+  font-weight: normal;
+}
+.highlight .kn {
+  color: $blue-main;
+  font-weight: normal;
+}
+.highlight .ow {
+  color: $yellow-main;
+  font-weight: normal;
+}
+.highlight .o {
+  color: $yellow-main;
+  font-weight: normal;
+}
+.highlight .mf {
+  color: $red-main;
+}
+.highlight .mh {
+  color: $red-main;
+}
+.highlight .il {
+  color: $red-main;
+}
+.highlight .mi {
+  color: $red-main;
+}
+.highlight .mo {
+  color: $red-main;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: $red-main;
+}
+.highlight .se {
+  color: $red-main;
+}
+.highlight .sb {
+  color: $red-main;
+}
+.highlight .sc {
+  color: $red-main;
+}
+.highlight .sd {
+  color: $red-main;
+}
+.highlight .s2 {
+  color: $red-main;
+}
+.highlight .sh {
+  color: $red-main;
+}
+.highlight .si {
+  color: $red-main;
+}
+.highlight .sx {
+  color: $red-main;
+}
+.highlight .sr {
+  color: $red-main;
+}
+.highlight .s1 {
+  color: $red-main;
+  font-style: italic;
+}
+.highlight .ss {
+  color: $red-main;
+}
+.highlight .s {
+  color: $red-main;
+  font-style: italic;
+}
+.highlight .na {
+  color: $blue-main;
+}
+.highlight .nc {
+  color: $blue-main;
+  font-weight: normal;
+}
+.highlight .nd {
+  color: $blue-main;
+  font-weight: normal;
+}
+.highlight .ne {
+  color: $blue-main;
+  font-weight: normal;
+}
+.highlight .nf {
+  color: $blue-main;
+  font-weight: normal;
+}
+.highlight .no {
+  color: $yellow-main;
+}
+.highlight .bp {
+  color: $white;
+  font-style: italic;
+}
+.highlight .nb {
+  color: $white;
+}
+.highlight .ni {
+  color: $white;
+}
+.highlight .nn {
+  color: $white;
+}
+.highlight .vc {
+  color: $white;
+}
+.highlight .vg {
+  color: $white;
+}
+.highlight .vi {
+  color: $white;
+}
+.highlight .nv {
+  color: $white;
+}
+.highlight .w {
+  color: $white;
+}
+.highlight .nl {
+  color: $white;
+  font-weight: normal;
+}
+.highlight .nt {
+  color: $blue-main;
+}
+.highlight {
+  color: $white;
+  background-color: $black;
+}

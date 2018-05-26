@@ -1,0 +1,82 @@
+@media only screen and (max-width: 768px) {
+  body {
+
+    blockquote {
+      padding-left: 3vw;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+
+    .highlight code {
+      line-height: 70%;
+      text-align: left;
+      letter-spacing: 0px;
+    }
+
+    .logo {
+      display: none;
+    }
+
+    table {
+      display: none;
+    }
+
+    .mobile-home {
+      display: block;
+      background: $black;
+      color: $white;
+      text-align: center;
+      font-family: "Patrick Hand SC", monospace;
+      font-size: 2.5em;
+      line-height: 1.5em;
+    }
+
+    header {
+      display: none;
+    }
+
+    nav {
+      position: relative;
+      
+      .fixed-nav {
+        position: relative;
+      }
+
+      ul {
+        flex-direction: column;
+      }
+    }
+
+    .site-wrap {
+      margin: auto;
+      padding: 20px;
+      max-width: 100vw;
+
+      h1 {
+        font-size: 2.5em;
+        line-height: 2.1em;
+      }
+
+      h2 {
+        font-size: 1.5em;
+        line-height: 1.25em;
+      }
+      
+      img {
+        max-width: 70vw;
+      }
+
+      iframe {
+        max-width: 70vw;
+      }
+    }
+
+    #home-footer {
+      flex-direction: column;
+    }
+  }
+}
+
+.mobile-home {
+  display: none;
+}
