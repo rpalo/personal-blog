@@ -8,7 +8,7 @@ if [ $# -ne 1 ]; then
 fi
 
 tag=$1
-cat<<EOF>./tags/$tag.md
+cat<<EOF>./src/tags/$tag.md
 ---
 layout: tagpage
 tag: $tag
