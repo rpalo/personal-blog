@@ -21,7 +21,7 @@ module Jekyll
         permalink: /tags/#{tag}/
         ---
       HEREDOC
-      File.open("tags/#{tag}.md", "w") do |f|
+      File.open("src/tags/#{tag}.md", "w") do |f|
         f.write(content)
       end
     end
