@@ -4,21 +4,25 @@ title: All Posts
 permalink: /posts/
 description: A list of all of my blog posts
 ---
-{% raw %}
+
 <div id="app">
   <div class="search-wrapper">
     <input class="search" type="text" name="search" v-model="search" placeholder="Search posts...">
   </div>
   <div class="results-wrapper">
-    <div class="post" v-for="post in filteredPosts">
-      <a class="post-title" v-bind:href="post.url">{{ post.title }}</a><br>
-      <small>{{ post.date }}</small>
-      <img class="img-small" alt="Cover image" v-bind:src="post.cover" v-if="post.cover">
-      <small>Tags: {{ post.tags }}</small>
+    {% for post in site.posts %}
+    <div class="post">
+      <a class="post-title" href="{{ post.url }}">{{ post.title }}</a>
+      <br>
+      <small>{{ post.date | date: "%B %d, %Y"}}</small>
+      {% if post.cover_image %}
+      <img class="img-small" alt="Cover image" src="/img/{{post.cover_image}}">
+      {% endif %}
+      <small>Tags: {{ post.tags | join: " " }}</small>
     </div>
+    {% endfor %}
   </div>
 </div>
-{% endraw %}
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.2/vue.min.js"></script>
 <script src="/js/posts_data.js"></script>
