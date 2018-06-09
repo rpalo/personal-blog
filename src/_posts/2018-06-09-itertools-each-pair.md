@@ -24,10 +24,10 @@ If I was writing in Ruby, this would be a perfect use case for the [each_cons](h
 
 ```python
 def each_cons(n, iterable):
-  	"""Returns every n consecutive items in an iterable.
-  	Example: each_cons(4, range(10)) => [0, 1, 2, 3], [1, 2, 3, 4], [2, 3, 4, 5]...
-  	"""
-		return (iterable[i: i + n] for i in range(len(iterable) - n + 1))
+    """Returns every n consecutive items in an iterable.
+    Example: each_cons(4, range(10)) => [0, 1, 2, 3], [1, 2, 3, 4], [2, 3, 4, 5]...
+    """
+    return (iterable[i: i + n] for i in range(len(iterable) - n + 1))
 ```
 
 Anytime you write `range(len(...`, there's probably a better way you could have done things.  **If you know a slicker, less indexy way to do this, please share it, because there's got to be a better way.  I can't be indexing into things manually like a barbarian.**
@@ -42,7 +42,7 @@ This method only really works cleanly if you need only two consecutive items, bu
 from itertools import tee
 
 def each_pair(iterable):
-		"""Returns each consecutive pair of items in an iterable"""
+    """Returns each consecutive pair of items in an iterable"""
     first, second = tee(iterable)
     next(second, None)
     return zip(first, second)
@@ -59,7 +59,7 @@ So, how does it work?
 
 First, we use `itertools.tee`, which returns two copies of the original iterable (a fancy word for anything you can iterate through: strings, lists, generators, etc.).  It also takes an optional argument for `n` if you want to make `n` copies instead of just 2.
 
-Now we have to identical copies of the original iterable.  We then call `next` on the second one in order to step it one item forward.  Notice the second argument to `next`, `None`.  The `next` function returns (and uses up) the next item in an iterable, and if you provide it a *default* and it can't return another item because that iterable is empty, it just returns the default.  
+Now we have two identical copies of the original iterable.  We then call `next` on the second one in order to step it one item forward.  Notice the second argument to `next`, `None`.  The `next` function returns (and uses up) the next item in an iterable, and if you provide it a *default* and it can't return another item because that iterable is empty, it just returns the default.  
 
 ```python
 # next only works on Iterator objects
@@ -76,7 +76,7 @@ next(a)
 # => Error!  StopIteration!
 ```
 
-This is just a neat way of saying "cycle the `second` iterable one item forward, but if you're already empty, don't worry about it.  Just don't throw an error."  You probably also noticed that we don't do anything with the result of this call to `next`.  We're just throwing an item away, it it exists.
+This is just a neat way of saying "cycle the `second` iterable one item forward, but if you're already empty, don't worry about it.  Just don't throw an error."  You probably also noticed that we don't do anything with the result of this call to `next`.  We're just throwing an item away, if it exists.
 
 The last part is zipping the two iterables together.  `zip` is a tricky function that seems simple, but often the results can be hard to wrap your head around.  It makes each n-th item of each iterator it is passed into one single list.
 
@@ -89,10 +89,10 @@ c = [True, False, True, False]
 
 zip(a, b, c)
 # => [
-#		[1, "Apple", True],
-#		[2, "Banana", False],
-#		[3, "Pear", True],
-#		[4, "Soup", False],
+#       [1, "Apple", True],
+#       [2, "Banana", False],
+#       [3, "Pear", True],
+#       [4, "Soup", False],
 #	]
 ```
 
@@ -112,12 +112,12 @@ zip(a, b)
 > b = [1, 2]
 > itertools.zip_longest(a, b, fillvalue=":)")
 > # => [
-> # 	[1, 1],
-> # 	[2, 2],
-> # 	[3, ":)"]
-> # 	[4, ":)"]
-> # 	[5, ":)"]
-> # 	[6, ":)"]
+> #	    [1, 1],
+> #	    [2, 2],
+> #	    [3, ":)"]
+> #	    [4, ":)"]
+> #	    [5, ":)"]
+> #	    [6, ":)"]
 > # ]
 > ```
 
