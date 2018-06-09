@@ -67,3 +67,4 @@ exclude: [
 # Gems
 plugins:
 - jekyll-autoprefixer
+- jekyll-sitemap

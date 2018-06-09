@@ -14,4 +14,5 @@ gem "cloudinary"
 
 group :jekyll_plugins do
   gem 'jekyll-cloudinary'
+  gem 'jekyll-sitemap'
 end
