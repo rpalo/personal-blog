@@ -16,6 +16,7 @@ layout: default
         {% for tag in page.tags %}
         <a href="/tags/{{tag}}/">{{ tag }}</a>
         {% endfor %}
+        | {% include coffee.html %}
     </small>
     {% endif %}
     {% include tinyletter_signup.html %}

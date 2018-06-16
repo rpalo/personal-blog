@@ -8,7 +8,7 @@ permalink: /
   <!-- Current Post -->
   {% for post in site.posts limit:1 %}
     <h1 id="title">{{ post.title }}</h1>
-    <small>{{ post.date | date: "%b %-d, %Y" }}</small>
+    <small>{{ post.date | date: "%b %-d, %Y" }}</small>{% include coffee.html %}
     <p>{{ post.content }}</p>
   {% endfor %}
 
