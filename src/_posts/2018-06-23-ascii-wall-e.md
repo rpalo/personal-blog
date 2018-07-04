@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Ascii Wall-e for Your Terminal
-description: I had a very productive day.  I made Wall-e in my terminal!
+title: Ascii Wall-E for Your Terminal
+description: I had a very productive day.  I made Wall-E in my terminal!
 tags: showdev fish art
 cover_image: wall-e.jpg
 ---
