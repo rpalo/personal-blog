@@ -5,20 +5,14 @@ layout: default
 <article class="site-wrap">
     <div id="cover">
         {% if page.cover_image %}
-        <img alt="Cover Image" class="cover-image" src="{{ 'https://res.cloudinary.com/duninnjce/image/upload/w_600,q_auto,f_auto/' | append: page.cover_image }}">
-        {% endif %}
+        <img alt="Cover Image" class="cover-image" src="{{ 'https://res.cloudinary.com/duninnjce/image/upload/w_600,q_auto,f_auto/' | append: page.cover_image }}"> {% endif %}
     </div>
     <h1>{{ page.title }}</h1>
-    {{ content }}
-    {% if page.tags %}
+    {{ content }} {% if page.tags %}
     <small>
-        Author: Ryan Palo | Tags: 
-        {% for tag in page.tags %}
+        Author: Ryan Palo | Tags: {% for tag in page.tags %}
         <a href="/tags/{{tag}}/">{{ tag }}</a>
-        {% endfor %}
-        | {% include coffee.html %}
+        {% endfor %} | {% include coffee.html %}
     </small>
-    {% endif %}
-    {% include tinyletter_signup.html %}
-    {% include big_footer.html %}
+    {% endif %} {% include tinyletter_signup.html %} {% include big_footer.html %}
 </article>
