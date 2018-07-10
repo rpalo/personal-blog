@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+bundle exec ruby scripts/upload_image.rb $1
