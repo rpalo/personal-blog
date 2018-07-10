@@ -6,7 +6,7 @@ cover_image: python-service.jpg
 tags: python sysadmin linux
 ---
 
-I'm going to show you how I got a Python script to run as a service on Ubuntu.  I was working on a project of mine that is a [Twitter Bot that tweets compliments at people](https://github.com/rpalo/fanbot).  I wrote a (slightly disjointed) [post about it](http://assertnotmagic.com/2017/05/01/fanbot-and-doing-new-things-right.html) a little while ago, if you want more background.  Basically, I have this bot running in a Python script, and I want this Python script to run for a long time.  I definitely want to be able to kick it off and log out of my server!  So I went in search of some options.
+I'm going to show you how I got a Python script to run as a service on Ubuntu.  I was working on a project of mine that is a [Twitter Bot that tweets compliments at people](https://github.com/rpalo/fanbot).  I wrote a (slightly disjointed) [post about it]({% post_url 2017-05-01-fanbot-and-doing-new-things-right %}) a little while ago, if you want more background.  Basically, I have this bot running in a Python script, and I want this Python script to run for a long time.  I definitely want to be able to kick it off and log out of my server!  So I went in search of some options.
 
 ## The Options
 

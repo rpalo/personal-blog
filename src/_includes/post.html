@@ -1,7 +1,7 @@
 
 <a class="post-title" href="{{ include.post.url }}">{{ include.post.title }}</a><br><small>{{ include.post.date | date: "%B %d, %Y" }}</small>
 {% if include.post.cover_image %}
-    <img class="img-small" alt="Cover image for {{ include.post.title }}" src="/img/{{ include.post.cover_image }}">
+    <img class="img-small" alt="Cover image for {{ include.post.title }}" src="{{ 'https://res.cloudinary.com/duninnjce/image/upload/w_600,q_auto,f_auto/' | append: include.post.cover_image }}">
 {% endif %}
 <small>Tags: 
 {% for tag in include.post.tags %}
