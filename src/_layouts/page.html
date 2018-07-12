@@ -8,6 +8,18 @@ layout: default
         <img alt="Cover Image" class="cover-image" src="{{ 'https://res.cloudinary.com/duninnjce/image/upload/w_600,q_auto,f_auto/' | append: page.cover_image }}"> {% endif %}
     </div>
     <h1>{{ page.title }}</h1>
+    
+    {% capture word_count %}
+        {{ page.content | number_of_words }}
+    {% endcapture %}
+    {% capture show_ttr %}
+        {{ word_count | minus: 200 }}
+    {% endcapture %}
+
+    {% unless show_ttr contains '-' %}
+        <small>{{ word_count }} words.  Time to Read: About {{ word_count | divided_by: 100 | floor }} minutes.</small>
+    {% endunless %}
+
     {{ content }} {% if page.tags %}
     <small>
         Author: Ryan Palo | Tags: {% for tag in page.tags %}
