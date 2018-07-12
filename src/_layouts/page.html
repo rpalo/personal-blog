@@ -27,4 +27,8 @@ layout: default
         {% endfor %} | {% include coffee.html %}
     </small>
     {% endif %} {% include tinyletter_signup.html %} {% include big_footer.html %}
+
+    {% if page.tags %}
+        {% include rich_blog_post_schema.html post=page %}
+    {% endif %}
 </article>

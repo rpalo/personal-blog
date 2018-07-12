@@ -1,0 +1,29 @@
+<script type="application/ld+json">
+  {
+    "@context":"http://schema.org",
+    "@type":"BlogPosting",
+    "headline":"{{ include.post.title | escape }}",
+    "datePublished":"{{ include.post.date }}",
+    "dateModified":"{{ include.post.date }}",
+    "wordCount":"{{ include.post.content | number_of_words }}",
+    "genre":"Technology",
+    "keywords":"{{ include.post.tags | join: ',' }}",
+    "author": {
+      "@type": "Person",
+      "name": "Ryan Palo"
+    },
+    "image": {
+      "@type": "ImageObject",
+      "url": "{{ 'https://res.cloudinary.com/duninnjce/image/upload/w_600,q_auto,f_auto/' | append: include.post.cover_image }}"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "assert_not magic?",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://assertnotmagic.com/img/logo.png"
+      }
+    },
+    "description": "{{ include.post.description }}"
+  }
+</script>
