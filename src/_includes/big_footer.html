@@ -26,7 +26,7 @@
       <h2>Tags</h2>
       <p>
         {% for tag in site.tags %}
-        <a href="/tags/{{tag | first}}/" style="font-size: {{ tag[1] | size | times: 2 | plus: 12 }}px">{{ tag[0] }} | </a>
+        <a href="/tags/{{tag | first}}/" style="font-size: {{ tag[1] | size | times: 2 | plus: 12 | at_most: 65 }}px">{{ tag[0] }} | </a>
         {% endfor %}
       </p>
     </div>
