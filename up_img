@@ -1,3 +1,7 @@
 #!/usr/bin/env bash
 
+# Usage: up_img IMAGE FILENAME
+#
+# Example: up_img woohoo.png
+
 bundle exec ruby scripts/upload_image.rb $1
