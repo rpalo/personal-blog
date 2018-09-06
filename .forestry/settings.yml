@@ -11,7 +11,7 @@ sections:
   path: src/tags
   label: Tags
   create: all
-  match: "*.md"
+  match: "**/*.md"
   templates:
   - tag-template
 - type: jekyll-pages
