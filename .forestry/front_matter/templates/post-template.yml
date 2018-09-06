@@ -1,0 +1,29 @@
+---
+label: Post Template
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: layout
+  label: Layout
+  hidden: true
+  config:
+    required: true
+  default: page
+- type: text
+  label: Title
+  name: title
+  config:
+    required: true
+- type: textarea
+  name: description
+  label: Description
+  description: A short description of the post that is shown on the Twitter listing
+- type: tag_list
+  name: tags
+  label: Tags
+  description: Tags that describe the post
+- type: text
+  name: cover_image
+  label: Cover Image
+  description: Filename with ending for the cover image (e.g. 'big_cat.jpg')
