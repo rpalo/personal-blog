@@ -27,5 +27,3 @@ fields:
   name: cover_image
   label: Cover Image
   description: Filename with ending for the cover image (e.g. 'big_cat.jpg')
-pages:
-- "./src/_posts/src/_drafts/2018-09-06-masters-update.md"
