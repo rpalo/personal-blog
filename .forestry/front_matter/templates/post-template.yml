@@ -28,4 +28,4 @@ fields:
   label: Cover Image
   description: Filename with ending for the cover image (e.g. 'big_cat.jpg')
 pages:
-- "./src/_posts/src/_posts/binary-and-hexadecimal-part-2-conversions.md"
+- "./src/_posts/src/_posts/2018-09-16-binary-and-hexadecimal-part-2-conversions.md"
