@@ -27,3 +27,5 @@ fields:
   name: cover_image
   label: Cover Image
   description: Filename with ending for the cover image (e.g. 'big_cat.jpg')
+pages:
+- "./src/_posts/src/_posts/binary-and-hexadecimal-part-2-conversions.md"
