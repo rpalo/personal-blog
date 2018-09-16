@@ -117,7 +117,7 @@ You'll notice that two hex digits can include all of the values between 0 and 25
 
 So we know that `#BADA55` is a color with quite a bit of green, medium-high amounts of red, and not a whole lot of blue.
 
-![The #BADA55 color](bada55.jpeg)
+![The #BADA55 color](/img/bada55.jpeg)
 
 **VINDICATION!**
 
