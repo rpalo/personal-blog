@@ -5,4 +5,5 @@ blog.sublime-project
 blog.sublime-workspace
 **/.DS_Store
 secrets.sh
+secrets.yml
 cloudinary.yml
