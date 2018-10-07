@@ -1,11 +1,12 @@
 ---
 layout: page
 title: File-Specific Vim Configuration
-description: A quick tip about making custom settings that are language-specific in Vim.
+description: A quick tip about making custom settings that are language-specific in
+  Vim.
 tags: vim tools
 cover_image: vim-ftplugin.png
----
 
+---
 It seems like an indicator of a powerful application if you can use it for a long time without any problems and then suddenly discover useful features that add to your enjoyment or productivity that you didn't even know existed.  This happens to me a lot with the Microsoft Office suite (imagine the look of boyish glee on my face as I discovered conditional formatting in Excel).  This also happens to me in Vim all. the. time.  Granted, this may be more because of a more specialized interface and low discoverability.  But, it's still like an Easter egg hunt that you come across that you weren't expecting because it's the middle of October!
 
 So here's the #spoopy Halloween egg for today: **Language-Specific Vim Configuration**.
@@ -30,4 +31,3 @@ I'm sure I'll add more to it as I come up with more shortcuts and handy little s
 That's the whole tip!  I thought it was neat and wanted to share it.  I like that you can separate things out into different files so that you don't end up with one long convoluted `.vimrc` file.  If you have any cool language-specific customizations or key-mappings that save you time, share them with me!
 
 Happy configuring!
-
