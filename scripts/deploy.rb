@@ -3,7 +3,7 @@
 
 require "fileutils"
 require "json"
-require "net/http"
+require "httparty"
 require "ostruct"
 require "optparse"
 require "uri"
@@ -117,28 +117,21 @@ def countdown(n)
 end
 
 def clear_posts_cache(noop = false)
-  secrets = YAML.load(File.read("secrets.yml"))
-  uri = URI.parse("https://api.cloudflare.com/client/v4/zones/13f84c3ce59abf8d0e7a6ef82a2d0385/purge_cache")
-  request = Net::HTTP::Delete.new(uri)
-  request.content_type = "application/json"
-  request["X-Auth-Email"] = secrets["email"]
-  request["X-Auth-Key"] = secrets["cloudflare_api_key"]
-  request.body = JSON.dump({
-    "files" => [
-      "https://assertnotmagic.com/js/posts_data.js"
-    ]
-  })
-
-  req_options = {
-    use_ssl: uri.scheme == "https",
-  }
-
   if noop
     response = OpenStruct.new(:code => 200, :body => "Dummy Request")
   else
-    response = Net::HTTP.start(uri.hostname, uri.port, req_options) do |http|
-      http.request(request)
-    end
+    secrets = YAML.load(File.read("secrets.yml"))
+    response = HTTParty.post(
+      "https://api.cloudflare.com/client/v4/zones/13f84c3ce59abf8d0e7a6ef82a2d0385/purge_cache",
+      :body => {
+        "files" => ["https://assertnotmagic.com/js/posts_data.js"]
+      }.to_json,
+      :headers => {
+        "Content-Type" => "application/json",
+        "X-Auth-Email" => secrets["email"],
+        "X-Auth-Key" => secrets["cloudflare_api_key"]
+      }
+    )
   end
 
   puts "#{response.code}: #{response.body}"

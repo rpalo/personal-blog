@@ -12,6 +12,7 @@ gem "tzinfo"
 gem "tzinfo-data"
 gem "cloudinary"
 gem 'liquid', :git => 'https://github.com/Shopify/liquid.git'
+gem 'httparty'
 
 group :jekyll_plugins do
   gem 'jekyll-cloudinary'
