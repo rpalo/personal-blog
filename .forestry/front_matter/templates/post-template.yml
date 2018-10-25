@@ -28,4 +28,4 @@ fields:
   label: Cover Image
   description: Filename with ending for the cover image (e.g. 'big_cat.jpg')
 pages:
-- src/_posts/tips-for-taming-the-css-beast.md
+- src/_posts/2018-10-25-tips-for-taming-the-css-beast.md
