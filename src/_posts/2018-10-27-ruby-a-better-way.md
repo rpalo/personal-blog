@@ -6,8 +6,6 @@ tags: ruby exercism challenge
 cover_image: robot-turtle.jpg
 ---
 
-
-
 I was recently doing a challenge on [Exercism](https://exercism.io), on the Ruby track, and I struggled a lot, but when I ended up with a final solution, I was amazed at how much the power of Ruby let me simplify my code.  
 
 It's a pretty cool challenge, so, I'll lay out the premise first, and then you can try it out.  If you're really into it, the Ruby tests for this exercise are [in the Exercism Ruby repo](https://github.com/exercism/ruby/blob/master/exercises/robot-name/robot_name_test.rb).  Most of the repos for the other languages have similar test suites for this exercise as well.  This exercise is called **Robot Name**.
@@ -32,29 +30,29 @@ The difficulty of this exercise is mainly in the fact that *there are so many po
 
 ```ruby
 class Robot
-    LETTERS = ('A'..'Z').to_a
-    NUMBERS = ('0'..'9').to_a
+  LETTERS = ('A'..'Z').to_a
+  NUMBERS = ('0'..'9').to_a
     
+  @@taken_names = []
+    
+  def self.forget
     @@taken_names = []
+  end
     
-    def self.forget
-        @@taken_names = []
+  attr_reader :name
+    
+  def initialize
+      reset
+  end
+  
+  def reset
+    name = ""
+    loop do
+      name = LETTERS.sample(2) + NUMBERS.sample(3)
+      break if ! @@taken_names.include?(name)
     end
-    
-    attr_reader :name
-    
-    def initialize
-		reset
-    end
-    
-    def reset
-     	name = ""
-        loop do
-            name = LETTERS.sample(2) + NUMBERS.sample(3)
-            break if ! @@taken_names.include?(name)
-        end
-        @name = name
-    end
+    @name = name
+  end
 end
 ```
 
@@ -68,8 +66,8 @@ So that's a great thought, but how to build the list of names?  Something like t
 
 ```ruby
 @@names = LETTERS
-		.product(LETTERS, NUMBERS, NUMBERS, NUMBERS)
-		.map(&:join)
+  .product(LETTERS, NUMBERS, NUMBERS, NUMBERS)
+  .map(&:join)
 # => @@names = ['AA000', 'AA001' ... 'ZZ998', 'ZZ999']
 ```
 
@@ -91,9 +89,9 @@ That giant product above creates a list like this:
 
 ```ruby
 [
-    ['A', 'A', '0', '0', '0'],
-    ['A', 'A', '0', '0', '1'],
-    ...
+  ['A', 'A', '0', '0', '0'],
+  ['A', 'A', '0', '0', '1'],
+  ...
 ```
 
 That's why we join them all together into single strings via the `.map(&:join)` method.
@@ -106,27 +104,27 @@ I even tried generating a giant list of integers instead and converting each int
 
 ```ruby
 class Robot
-    LETTERS = ('A'..'Z').to_a
-    NUMBERS = ('0'..'9').to_a
+  LETTERS = ('A'..'Z').to_a
+  NUMBERS = ('0'..'9').to_a
     
+  @@possible_names = LETTERS
+    .product(LETTERS, NUMBERS, NUMBERS, NUMBERS)
+    .map(&:join)
+    
+  def self.forget
     @@possible_names = LETTERS
-    	.product(LETTERS, NUMBERS, NUMBERS, NUMBERS)
-    	.map(&:join)
+      .product(LETTERS, NUMBERS, NUMBERS, NUMBERS)
+      .map(&:join)
+  end
     
-    def self.forget
-        @@possible_names = LETTERS
-    		.product(LETTERS, NUMBERS, NUMBERS, NUMBERS)
-    		.map(&:join)
-    end
+  def initialize
+    reset
+  end
     
-    def initialize
-    	reset
-    end
-    
-    def reset
-        next_index = rand(0...@@possible_names.length)
-        @name = @@possible_names.pop(next_index)
-    end
+  def reset
+    next_index = rand(0...@@possible_names.length)
+    @name = @@possible_names.pop(next_index)
+  end
 end
 ```
 
@@ -156,23 +154,23 @@ Lastly, dealing with modifying this great giant list over and over.  The solutio
 
 ```ruby
 class Robot
-    POSSIBLE_NAMES = 'AA000'..'ZZ999'
+  POSSIBLE_NAMES = 'AA000'..'ZZ999'
     
+  @@names = POSSIBLE_NAMES.to_a.shuffle.each
+    
+  def self.forget
     @@names = POSSIBLE_NAMES.to_a.shuffle.each
+  end
     
-    def self.forget
-        @@names = POSSIBLE_NAMES.to_a.shuffle.each
-    end
+  attr_reader :name
     
-    attr_reader :name
+  def initialize
+    reset
+  end
     
-    def initialize
-        reset
-    end
-    
-    def reset
-        @name = @@names.next
-    end
+  def reset
+    @name = @@names.next
+  end
 end
 ```
 
