@@ -4,4 +4,4 @@
 #
 # Example: up_img woohoo.png
 
-bundle exec ruby scripts/upload_image.rb $1
+bundle exec ruby bin/upload_image.rb $1
