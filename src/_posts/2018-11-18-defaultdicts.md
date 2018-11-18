@@ -6,6 +6,8 @@ tags: python standard-library defaultdict
 cover_image: dictionary.jpg
 ---
 
+*Cover image by Romain Vignes on Unsplash.*
+
 It's fall, so it seems like the perfect time to write some posts about PSL.  Nope, not Pumpkin Spice Lattes -- the Python Standard Library!  The Standard Library is a bunch of useful modules that come packaged with Python (Batteries Included!), so there's little-to-no security/maintenance burden incurred when you pull them into your code!
 
 As I mentor people new to Python on Exercism, there are a couple of exercises that make big use `dicts`.  You might know them in other languages as a `hash`, `hashmap`, or `dictionary`.  Whatever you call them, I'm talking about the data type that maps one value, a **key**, to another value, commonly just referred to as **the value**.
