@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+bundle exec bin/deploy.rb "$1"
