@@ -6,6 +6,8 @@ tags: bash scripting
 cover_image: bash-branches.jpg
 ---
 
+*Cover photo by Christy Mills on Unsplash.*
+
 Bash is an interesting language.  It's designed primarily to be used interactively on the command line, essentially in a REPL (Read-Evaluate-Print-Loop), working on one user command at a time.  It's designed to handle plain text powerfully and succinctly.  This has the side-effect of causing it to be a little more difficult to do things that aren't interactive or text-based, like arithmetic, control flow, and manipulating variables.
 
 In this article, we'll go through one of those slightly confusing topics: `if` statements.  We'll dive into how they work and how we can use those mechanics in really neat ways.
