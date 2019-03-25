@@ -1,0 +1,17 @@
+---
+layout: page
+title: Tags
+permalink: /tags/
+description: All article categories
+---
+
+<ul>
+  {% assign sorted_tags = site.tags | sort %}
+  {% for tag in sorted_tags %}
+    {% assign tagname = tag[0] %}
+    {% assign post_count = tag[1] | size %}
+    <li>
+      <a href="/tags/{{ tagname }}/">{{ tagname }}</a>: {{ post_count | pluralize: 'post ', 'posts' }}
+    </li>
+  {% endfor %}
+</ul>
