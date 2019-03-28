@@ -7,7 +7,7 @@ const template = `
   <div class="post" v-for="post in filteredPosts">
       <a class="post-title" v-bind:href="post.url">{{ post.title }}</a><br>
       <small>{{ post.date }}</small>
-      <img class="img-small" alt="Cover image" v-bind:src="post.cover" v-if="post.cover">
+      <img class="img-small" alt="Cover image" v-bind:src="post.cover" v-if="post.cover != ''">
       <small>Tags: {{ post.tags }}</small>
     </div>
 `

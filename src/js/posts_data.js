@@ -5,7 +5,7 @@ const posts = [
     {
         title: "{{ post.title }}",
         url: "{{ site.baseurl}}{{ post.url }}",
-        cover: "{{ 'https://res.cloudinary.com/duninnjce/image/upload/w_300,q_auto,f_auto/' | append: post.cover_image }}",
+        cover: "{% if post.cover_image %}{{ 'https://res.cloudinary.com/duninnjce/image/upload/w_300,q_auto,f_auto/' | append: post.cover_image }}{% endif %}",
         tags: "{{ post.tags | join: ', ' }}",
         date: "{{ post.date | date: '%B %d, %Y' }}",
         description: "{{ post.description | strip_html | strip_newlines | escape }}"
