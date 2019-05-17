@@ -1,25 +1,23 @@
----
----
-@import "variables";
+/* PrismJS 1.16.0
+https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+c+bash+coffeescript+ruby+markup-templating+git+go+ini+json+julia+markdown+liquid+makefile+crystal+django+powershell+processing+scss+python+r+jsx+rust+sass+yaml+vim&plugins=line-highlight+line-numbers+toolbar+highlight-keywords+command-line+normalize-whitespace+show-language+copy-to-clipboard */
+/**
+ * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML
+ * Based on https://github.com/chriskempson/tomorrow-theme
+ * @author Rose Pritchard
+ */
 
-// /* PrismJS 1.12.2
-// http://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+c+bash+coffeescript+ruby+django+git+go+ini+json+liquid+makefile+markdown+powershell+processing+python+r+jsx+crystal+rust+sass+scss+vim+yaml&plugins=line-highlight+line-numbers+toolbar+highlight-keywords+command-line+normalize-whitespace+show-language+copy-to-clipboard */
-// /**
-//  * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML
-//  * Based on https://github.com/chriskempson/tomorrow-theme
-//  * @author Rose Pritchard
-//  */
-
-code[class*="language-"], pre[class*="language-"] {
+code[class*="language-"],
+pre[class*="language-"] {
 	color: #ccc;
 	background: none;
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
 	text-align: left;
 	white-space: pre;
 	word-spacing: normal;
 	word-break: normal;
 	word-wrap: normal;
-	line-height: 20px;
+	line-height: 1.5;
 
 	-moz-tab-size: 4;
 	-o-tab-size: 4;
@@ -67,25 +65,24 @@ pre[class*="language-"] {
 .token.attr-name,
 .token.namespace,
 .token.deleted {
-	color: $red-main;
+	color: #e2777a;
 }
 
-.token.function-name,
-.token.function {
-	color: $blue-main;
+.token.function-name {
+	color: #6196cc;
 }
 
 .token.boolean,
-.token.number
- {
-	color: $red-main;
+.token.number,
+.token.function {
+	color: #f08d49;
 }
 
 .token.property,
 .token.class-name,
 .token.constant,
 .token.symbol {
-	color: $red-main;
+	color: #f8c555;
 }
 
 .token.selector,
@@ -93,7 +90,7 @@ pre[class*="language-"] {
 .token.atrule,
 .token.keyword,
 .token.builtin {
-	color: $green-main;
+	color: #cc99cd;
 }
 
 .token.string,
@@ -101,13 +98,13 @@ pre[class*="language-"] {
 .token.attr-value,
 .token.regex,
 .token.variable {
-	color: $yellow-main;
+	color: #7ec699;
 }
 
 .token.operator,
 .token.entity,
 .token.url {
-	color: $blue-main;
+	color: #67cdcc;
 }
 
 .token.important,
@@ -123,7 +120,7 @@ pre[class*="language-"] {
 }
 
 .token.inserted {
-	color: $green-main;
+	color: green;
 }
 
 pre[data-line] {
@@ -176,33 +173,26 @@ pre[data-line] {
 	content: none;
 }
 
-pre.line-numbers {
+pre[class*="language-"].line-numbers {
 	position: relative;
 	padding-left: 3.8em;
-	@media (max-width: 700px) {
-		padding-left: 3.2em;
-	}
 	counter-reset: linenumber;
 }
 
-pre.line-numbers > code {
+pre[class*="language-"].line-numbers > code {
 	position: relative;
-    white-space: inherit;
+	white-space: inherit;
 }
 
 .line-numbers .line-numbers-rows {
 	position: absolute;
 	pointer-events: none;
 	top: 0;
-	/* font-size: 100%; */
+	font-size: 100%;
 	left: -3.8em;
-	@media (max-width: 700px) {
-		left: -3.2em;
-	}
 	width: 3em; /* works for line-numbers below 1000 lines */
 	letter-spacing: -1px;
 	border-right: 1px solid #999;
-	line-height: 22px;
 
 	-webkit-user-select: none;
 	-moz-user-select: none;
@@ -224,6 +214,7 @@ pre.line-numbers > code {
 			padding-right: 0.8em;
 			text-align: right;
 		}
+
 div.code-toolbar {
 	position: relative;
 }
@@ -265,7 +256,7 @@ div.code-toolbar > .toolbar a,
 div.code-toolbar > .toolbar button,
 div.code-toolbar > .toolbar span {
 	color: #bbb;
-	/*font-size: .8em; */
+	font-size: .8em;
 	padding: 0 .5em;
 	background: #f5f2f0;
 	background: rgba(224, 224, 224, 0.2);
@@ -287,7 +278,7 @@ div.code-toolbar > .toolbar span:focus {
 	border-right: 1px solid #999;
 	display: block;
 	float: left;
-	/*font-size: 100%;*/
+	font-size: 100%;
 	letter-spacing: -1px;
 	margin-right: 1em;
 	pointer-events: none;
