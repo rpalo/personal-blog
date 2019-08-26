@@ -8,6 +8,7 @@ const template = `
       <a class="post-title" v-bind:href="post.url">{{ post.title }}</a><br>
       <small>{{ post.date }}</small>
       <img class="img-small" alt="Cover image" v-bind:src="post.cover" v-if="post.cover != ''">
+      <p v-html="post.description"></p>
       <small>Tags: {{ post.tags }}</small>
     </div>
 `

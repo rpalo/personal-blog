@@ -18,6 +18,7 @@ description: A list of all of my blog posts
       {% if post.cover_image %}
       <img class="img-small" alt="Cover image" src="{{ 'https://res.cloudinary.com/duninnjce/image/upload/w_,q_auto,f_auto/' | append: post.cover_image }}">
       {% endif %}
+      <p>{{ post.description }}</p>
       <small>Tags: {{ post.tags | join: " " }}</small>
     </div>
     {% endfor %}
