@@ -14,7 +14,7 @@ A tiny note on all of these is that Bash generally likes to see a space between 
 
 ## ( Single Parentheses )
 
-Single parenthesis will run the commands inside in a **subshell**.  This means that they run through all of the commands inside, and then return a single exit code.  Any variables declared or environment changes will get cleaned up and disappeared.  Because it's within a subshell, if you have it inside a loop, it will run a little slower than if you called the commands *without* the parentheses.
+The first usage for single parenthesis is running commands inside in a **subshell**.  This means that they run through all of the commands inside, and then return a single exit code.  Any variables declared or environment changes will get cleaned up and disappeared.  Because it's within a subshell, if you have it inside a loop, it will run a little slower than if you called the commands *without* the parentheses.
 
 ```bash
 a='This string'
@@ -25,6 +25,38 @@ ls
 # => ...
 # => banana/
 ```
+
+The second usage is in declaring arrays.  Now, arrays and associative arrays are only available in newer versions of Bash, and there are a lot of weird edge cases and syntax rules that make it easy to make mistakes using them--so much so that I try to steer Bash newbies clear of their usage unless they're definitely the right tool to use.  But, for completeness's sake:
+
+```bash
+cheeses=('cheddar' 'swiss' 'provolone' 'brie')
+echo "${cheeses[2]}"
+# => swiss
+cheeses+='american'
+for cheese in $cheeses; do
+  echo "$cheese"
+done
+# => cheddar
+# => swiss
+# => provolone
+# => brie
+# => american
+```
+
+In the input inside the parentheses, Bash uses the current environment variable `$IFS` (field separator) and will split the array string on any character found in `$IFS`.  So one way you can split a string on a character is something like this:
+
+```bash
+grade_string='A;B;F;D;C;A-'
+IFS=';' grades=($grade_string)
+echo "${grades[1]}"
+# => B
+echo "${grades[3]}"
+# => D
+```
+
+There's a whole bunch more to dive into here, and a ton of gotchas to look out for, but that's a whole nother article.  I'll put it on the list of drafts to write.  This should give you enough of a feel to not freak out if you see it in somebody's Bash script, though.  :)
+
+*Thanks Davide for bringing up this use case for parentheses.*
 
 ## (( Double Parentheses ))
 
@@ -122,6 +154,16 @@ fi
 ```
 
 Although, really, this isn't so much a special bracket pattern as it is an interesting use of `$?`, since the above works even if there is a space between the `$( stuff )` and the `$?`.  But a neat tip, nonetheless.
+
+However, in Bash, `if` statements will process the `then` branch if the expression after `if` has an exit code of 0 and the `else` branch otherwise, so, in this case, *Matthew* notes that we can drop all of the fancy stuff and simplify to:
+
+```bash
+if grep -q PATTERN FILE; then
+  echo "Vee haf found eet!"
+else
+  echo "No.  Lame."
+fi
+```
 
 ## $(( Dollar Double Parentheses ))
 
@@ -237,11 +279,45 @@ pie=good
 
 Also, inside double square brackets, `<` and `>` sort by your locale.  Inside single square brackets, it's by your machine's sorting order, which is usually ASCII.
 
+## Function Parens/Braces() { ... }
 
+Functions are a little bit stranger in Bash than many other languages.  First of all, there's several ways to define them, that are all totally equivalent:
+
+```bash
+function hi_there() {
+  echo "Hi"
+}
+
+hi_there() {
+  echo "Hi"
+}
+
+function hi_there {
+  echo "Hi"
+}
+
+# All above versions work fine with the C-style brace
+# arrangement too.
+hi_there()
+{
+  echo "Hi"
+}
+```
+
+Every single one of these defines a function called `hi_there`.  The round parentheses are there *solely* for decoration.  In other languages, you might put your expected parameters there.  Not so in Bash.  Bash doesn't give a rat's patootie what you want people to pass your function.  Usually, if people are nice, you'll see the expected parameters named at the top of the function:
+
+```bash
+function hi_there() {
+  name="$1"
+  echo "Hi $name!"
+}
+```
+
+*Thanks for pointing out that I should probably mention this usage, Robert!*
 
 ## { Single Curly Braces }
 
-Single curly braces are used for expansion.
+The first use for single curly braces is expansion.
 
 ```bash
 echo h{a,e,i,o,u}p
@@ -261,6 +337,16 @@ echo {01..10}
 echo {01..10..3}
 01 04 07 10
 ```
+
+They can also be used for grouping commands:
+
+```bash
+[[ "$1" == secret ]] && {echo "The fox flies at midnight"; echo "Ssssshhhh..."}
+```
+
+These commands are all run together in a block, but no new subshell is started.
+
+*Thanks for reminding me of this usage, Robert!*
 
 ## ${dollar braces}
 
