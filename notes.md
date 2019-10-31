@@ -1,11 +1,9 @@
 # Notes for blog development
 
-**4/25/17**
-Cover images for each post, similar to Dev.to?
-Dark code snippet theme?
-
 **5/25/18**
 404 page.
 Terminal version.
-Still need to figure out a good way to hook up to cloudinary.
-Convert deploy script to a jekyll command?  Is there a git gem to help?
+
+**10/31/19**
+Service worker for offline reading?  Shouldn't be that hard.
+Eventually re-design landing page and everything to use my pixel animations
