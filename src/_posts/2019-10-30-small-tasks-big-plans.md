@@ -9,8 +9,6 @@ tags:
 
 My daughter is six months old!
 
-![My daughter at 6 months.  In a Star Wars sweater!](/img/elle-6-months.png)
-
 She's the best.
 
 Over the last six months, my life has changed a whole lot.  More than I ever could have expected.  Besides the fact that Palo squad is 50% bigger and 400% more wiggly, I think the biggest difference is in how our time is split up.
