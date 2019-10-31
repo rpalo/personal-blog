@@ -1,18 +1,16 @@
----
----
+
 var params = new URLSearchParams(location.search);
 
-{% raw %}
 const template = `
   <div class="post" v-for="post in filteredPosts">
       <a class="post-title" v-bind:href="post.url">{{ post.title }}</a><br>
-      <small>{{ post.date }}</small>
+      <small>{{ post.date }}</small><br>
+      <div class="category-label cat-{{post.category}}" v-if="post.category != ''">{{ post.category}}</div>
       <img class="img-small" alt="Cover image" v-bind:src="post.cover" v-if="post.cover != ''">
       <p v-html="post.description"></p>
       <small>Tags: {{ post.tags }}</small>
     </div>
 `
-{% endraw %}
 
 
 // The results_wrapper div is pre-loaded with all search results by
