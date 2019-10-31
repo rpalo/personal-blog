@@ -53,3 +53,8 @@ exclude: [
 plugins:
 - jekyll-autoprefixer
 - jekyll-sitemap
+
+# Asciidoc
+asciidoc: {}
+asciidoctor: 
+  base_dir: :source
