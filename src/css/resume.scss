@@ -1,0 +1,146 @@
+---
+---
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700|Patrick+Hand+SC');
+
+@import 'variables';
+
+// Generic
+body {
+  box-sizing: border-box;
+}
+
+// Typography
+h1 {
+  font-family: 'Patrick Hand SC';
+  font-size: 48px;
+  border-bottom: 3px solid $blue-main;
+  line-height: 1em;
+
+  &::before {
+    content: '#        ';
+    color: transparentize($blue-main, .5);
+    margin-left: -30px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    font-size: 36px;
+    text-align: center;
+  }
+}
+
+h2 {
+  &::before {
+    content: '##      ';
+    color: transparentize($color: $red-main, $amount: .5);
+    margin-left: -40px;
+  }
+
+  @media screen and (max-width: 700px) {
+    padding-left: 40px;
+  }
+}
+
+h3 {
+  &::before {
+    content: "###      ";
+    color: transparentize($color: $yellow-main, $amount: .5);
+    margin-left: -40px;
+  }
+
+  @media screen and (max-width: 700px) {
+    padding-left: 40px;
+  }
+}
+
+body {
+  font-family: Lato;
+  font-size: 18px;
+
+  @media screen and (max-width: 700px) {
+    font-size: 18px;
+  }
+}
+
+.content {
+  line-height: 1.2em;
+}
+
+
+// Layout
+.content {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: auto 300px;
+  grid-gap: 80px;
+
+  @media screen and (max-width: 700px) {
+    display: block;
+  }
+}
+
+aside div {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+// Lists
+ul {
+  list-style-type: none;
+  padding-left: 0;
+
+  &.dashed {
+    padding-left: 10px;
+
+    & li::before {
+      content: "- ";
+    }
+  }
+}
+
+// Links
+a {
+  color: $red-main;
+}
+
+// Custom class styling
+.subtitle {
+  font-weight: normal;
+}
+
+.dates {
+  font-style: italic;
+}
+
+.links-box {
+  border: 3px solid $red-main;
+  padding-left: 50px;
+}
+
+.programming-box {
+  border: 3px solid $blue-main;
+  padding: 10px;
+
+  h4 {
+    border-bottom: 1px solid $black;
+  }
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  justify-items: left;
+  align-items: center;
+
+  li {
+    padding: 5px;
+  }
+
+  @media screen and (max-width: 700px) {
+    display: block;
+  }
+}
