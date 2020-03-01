@@ -7,3 +7,4 @@ blog.sublime-workspace
 secrets.sh
 secrets.yml
 cloudinary.yml
+src/.jekyll-cache/
