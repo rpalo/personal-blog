@@ -1,3 +1,11 @@
+---
+layout: page
+title: Bash Functions Primer
+draft: true
+description: Bash Functions
+tags: bash
+---
+
 # Bash Functions Primer
 
 If your Bash script is just a few lines of automated shell commands to make your life easier, leaving them in the script to be read top-to-bottom is a fine way to do things.  It documents your process, improves consistency, and reduces the amount of errors that you make typing them by hand each time.  But what happens when your script gets a little longer, or you find yourself repeating yourself, or you start to notice chunks of related functionality that could be abstracted and re-used?  What happens when you've got custom functionality that you'd like to turn into "commands" you can use from the command line?
