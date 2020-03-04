@@ -2,7 +2,11 @@
 layout: page
 title: Dev Journal 1/24/2020
 description: Crontab, awk, grep, and getent
-tags: linux, awk, cron, dotfiles
+tags: 
+- linux
+- awk
+- cron
+- dotfiles
 category: devjournal
 ---
 
