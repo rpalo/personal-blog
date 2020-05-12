@@ -19,6 +19,19 @@ This is fine unless your image is huge or your secret message has a bunch of gar
 
 Well, OK then!  Granted, when you read through the man page for it, it proclaims itself as a very simple string-finding algorithm, but good as a first easy pass.
 
+Instead of the above `hexdump` output, you get something like this:
+
+```text
+B*M)M1,
+a&%5
+%PJ)
+XJ)FO
+KL\I!D
+Y}RJ
+```
+
+Which is *way* more searchable, `awk`able, etc.!
+
 Take this image here:
 
 ![A cute picture of a puppy.](/img/secret_puppy.png)
