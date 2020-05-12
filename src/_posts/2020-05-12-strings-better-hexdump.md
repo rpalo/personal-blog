@@ -41,7 +41,7 @@ Cute puppy, right?  Yes, but it is also a *puppy full of secrets.*
 Give it a try.  Download it and then run:
 
 ```bash
-strings secret_puppy.jpg
+strings secret_puppy.png
 ```
 
 Find anything fun?
