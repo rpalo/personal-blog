@@ -19,7 +19,7 @@ description: A list of all of my blog posts
       <div class="category-label cat-{{post.category}}">{{ post.category}}</div>
       {% endif %}
       {% if post.cover_image %}
-      <img class="img-small" alt="Cover image" src="{{ 'https://res.cloudinary.com/duninnjce/image/upload/w_300,q_auto,f_auto/' | append: post.cover_image }}">
+      <img class="img-small" alt="Cover image" src="{{ 'https://res.cloudinary.com/duninnjce/image/upload/c_scale,w_300,q_auto,f_auto/' | append: post.cover_image }}">
       {% endif %}
       <p>{{ post.description }}</p>
       <small>Tags: {{ post.tags | join: " " }}</small>
