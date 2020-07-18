@@ -5,6 +5,7 @@ description: My resume wasn't great, and now it is.  Devs were very helpful.
 tags:
 - resume
 - career
+cover_image: dev-resume-cover.png
 ---
 
 Last week, I wrote a post on DEV asking for advice on my resume.  I had been sending out lots of job applications, but having a hard time even getting an interview.  So I figured I must be missing the mark somehow, and I wanted to see what the people of DEV thought.  I got _a lot_ of good feedback and I wanted to share it so it might help somebody else too.
