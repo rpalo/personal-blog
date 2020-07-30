@@ -2,34 +2,42 @@
 layout: page
 title: About
 permalink: /about/
+standalone: true
 ---
 
-My name is Ryan Palo.  I'm a mechanical engineer, currently living in the Oakland, CA area.  I've specifically got a focus on mold tool design, design for manufacturability/moldability, and turbomachinery.  A lot of my turbomachinery calculations have been supported by Python scripts to optimize designs.
+## Get In Touch!
 
-I'm currently programming and learning everything I can as a hobby, but I'm open to new work, mentoring, or being mentored.  I would love to experience the software engineering/development world.  My ultimate goal is to learn as much as I can so I can teach other people about programming and get them as excited about it as I am.  As you can see from the tags, my main experience is in [Python](/tags/python/) and [Ruby](/tags/ruby/), but I've done some work in [JavaScript](/tags/javascript/), HTML and CSS, Golang, and a few others.
+Hi!  My name is Ryan Palo.  I'm a mechanical engineer in the Sacramento, CA area.  Here's how to get in touch with me:
 
-I'm creating this blog to keep track of all of the things I'm learning about.  In the past couple of years or so, I've started to learn a lot about different aspects of software and programming.  I want to be able to track my progress and feel accomplished in a year instead of feeling like a failure when I look up and still see how much there is that I don't know.  My goal is to at least post something every two weeks.  Hopefully I can even improve on that.  I'll write about what I am currently learning, what is interesting to me, and try to explain the things that I'm learning to cement that knowledge.  Probably, this won't be interesting to anybody but me, but that's ok.
+The quickest, easiest, most reliable way is definitely email.  You can reach me at hello@assertnotmagic.com or ryan@thepalos.com.
 
-This will also be a good way to exercise my writing muscle, and get more practice and fluency with Markdown, Git, Jekyll, and the various other components that are coming together to make this happen.
+<div class="link-holder" style="text-align: center">
+    <a href="https://github.com/rpalo">
+        <img class="contact-link" alt="Ryan's Github" src="/img/github_logo.png">
+    </a>
+    <a href="https://twitter.com/paytastic">
+        <img class="contact-link" alt="Ryan's Twitter" src="/img/twitter_logo.png">
+    </a>
+    <a href="https://dev.to/rpalo">
+        <img class="contact-link" src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="Ryan Palo's DEV Profile" />
+    </a>
+    <a href="https://www.linkedin.com/in/ryan-palo">
+        <img class="contact-link" alt="Ryan's Linkedin" src="/img/linkedin_logo.png">
+    </a>
+</div>
 
-I love getting feedback and hearing from other people of different skill/experience levels in the community.  I want to hear what you think, so please shoot me an email or message me on any of the available social medias... medii?.. median?  Moods?  Whatever.
+My DM's are open on Twitter, LinkedIn, and DEV!
 
-You can see some of my projects on <a href="https://github.com/rpalo">GitHub 
-    <img class="contact-link" alt="Ryan's Github" src="/img/github_logo.png">
-</a>.
+## About Me
 
-My DM's are open, so probably the fastest and easiest way to provide quick feedback or ask me a question (about anything!) is <a href="https://twitter.com/paytastic">on Twitter 
-    <img class="contact-link" alt="Ryan's Twitter" src="/img/twitter_logo.png">
-</a>.
+I'm a mechanical engineer and tool designer.  Mostly molds for injection molding medical devices.  It's pretty cool!  I'm also the quality manager and tooling project manager.
 
-I cross-post most of my articles on <a href="https://dev.to/rpalo">Dev.to <img class="contact-link" src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="Ryan Palo's DEV Profile" height="30" width="30" />
-</a> as well.  It's really a great community, and I can't recommend it enough for people of any skill/interest level.
+I love to code (hence: blog).  Python, Ruby, Bash, and Rust mostly.  And dabbling in a bunch of other stuff.
 
-I'm also a contributor to <a href="https://simpleprogrammer.com/author/ryanpalo/">Simple Programmer <img class="contact-link" alt="Ryan Palo's Simple Programmer page" src="/img/sp-badge.png" height="30px" width="30px"></a>.
+I'm finishing up my Master's in Computer Science (expected June of 2021) with a focus on intelligent systems: data science, AI, robotics, and security/forensics.
 
-I've never really gotten much use out of it, but I keep my <a href="https://www.linkedin.com/in/ryan-palo
-">LinkedIn account 
-    <img class="contact-link" alt="Ryan's Linkedin" src="/img/linkedin_logo.png">
-</a> up to date, and you can see how cool I am there.
+I'm actively searching for my first dev job.  [Here's a copy of my dev resume.](/07-20-resume.pdf)  I think I'd do best at a back-end, SysDevOps, SRE, documentation, or internal tooling position.  I *am* a toolmaker, after all.  Preferably with lots of mentorship.
 
-You can also email me at hello@assertnotmagic.com or ryan@thepalos.com.
+That being said, I'm really open to anything and I'm confident that I'd be productive and a great hire for pretty much any position and language.  I love learning new things, so I'm always excited to dig into a new language or framework.  
+
+Remote or Sacramento area preferred.
