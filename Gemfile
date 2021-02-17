@@ -10,9 +10,7 @@ gem "uglifier"            # Uglifies/compresses the JavaScript
 gem "tzinfo"              # Only required because I develop on Windows occasionally
 gem "tzinfo-data"         # Same same
 gem "cloudinary"          # Cloudinary for uploading files
-gem 'liquid', :git => 'https://github.com/Shopify/liquid.git'   # There was a weird liquid bug 
-                                                                # that was only fixed in Master.  
-                                                                # Could probably be removed.
+gem 'liquid'
 gem 'httparty'            # Only used for HTTP calls.  Not even really currently used.
 
 group :jekyll_plugins do
