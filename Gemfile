@@ -4,6 +4,8 @@ ruby RUBY_VERSION
 gem "jekyll"
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
+
+gem 'execjs', '2.7'       # Locking it due to an issue affecting node version checking
 gem 'jekyll-autoprefixer' # Plugin for autoprefixing CSS so you don't have to mess with that
 gem "babel-transpiler"    # Use modern JavaScript (works kind of)
 gem "uglifier"            # Uglifies/compresses the JavaScript
