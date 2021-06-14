@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Solving error ExecJS error that breaks Jekyll on Rebuild"
+title: "Solving an ExecJS Error that Breaks Jekyll on Rebuild"
 description: Updating my blog after 6 months took a lot more than I initially thought it would.  Oy...
 tags:
 - jekyll
