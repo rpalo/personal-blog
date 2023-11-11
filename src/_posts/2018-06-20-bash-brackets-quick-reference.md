@@ -182,6 +182,14 @@ echo $a
 # => 36
 ```
 
+I *will* remind you that the assignment above is just as possible using plain double parens, as appears in the examples in that section.  *(Thanks to Yaniv Orenstein for flagging the potential for clarification here.)*
+
+```bash
+(( a = 16 + 2 ))
+```
+
+
+
 One thing to remember is that this is strictly integer arithmetic.  No decimals.  Look into [`bc`](https://www.lifewire.com/use-the-bc-calculator-in-scripts-2200588) for floating point calculations.
 
 ```bash
