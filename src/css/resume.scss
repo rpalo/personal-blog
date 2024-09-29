@@ -1,8 +1,11 @@
 ---
 ---
+@use "sass:color";
 @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700|Patrick+Hand+SC');
 
 @import 'variables';
+
+
 
 // Generic
 body {
@@ -18,7 +21,7 @@ h1 {
 
   &::before {
     content: '#        ';
-    color: transparentize($blue-main, .5);
+    color: color.adjust($blue-main, $alpha: -0.5);
     margin-left: -30px;
   }
   
@@ -31,7 +34,7 @@ h1 {
 h2 {
   &::before {
     content: '##      ';
-    color: transparentize($color: $red-main, $amount: .5);
+    color: color.adjust($color: $red-main, $alpha: -0.5);
     margin-left: -40px;
   }
 
@@ -43,7 +46,7 @@ h2 {
 h3 {
   &::before {
     content: "###      ";
-    color: transparentize($color: $yellow-main, $amount: .5);
+    color: color.adjust($color: $yellow-main, $alpha: -0.5);
     margin-left: -40px;
   }
 
@@ -88,18 +91,18 @@ aside div {
 }
 
 // Lists
-ul {
-  list-style-type: none;
-  padding-left: 0;
+// ul {
+//   list-style-type: none;
+//   padding-left: 0;
 
-  &.dashed {
-    padding-left: 10px;
+//   &.dashed {
+//     padding-left: 10px;
 
-    & li::before {
-      content: "- ";
-    }
-  }
-}
+//     & li::before {
+//       content: "- ";
+//     }
+//   }
+// }
 
 // Links
 a {
@@ -143,4 +146,19 @@ a {
   @media screen and (max-width: 700px) {
     display: block;
   }
+}
+
+.contact {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+nav li {
+  list-style-type: none;
+  display: inline;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
 }

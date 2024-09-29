@@ -7,22 +7,22 @@
 }
 
 .cat-tech {
-    background-color: transparentize($color: $blue-dark, $amount: .4);
+    background-color: color.adjust($color: $blue-dark, $alpha: -0.4);
     color: $white;
 }
 
 .cat-watercooler {
-    background-color: transparentize($color: $blue-main, $amount: .4);
+    background-color: color.adjust($color: $blue-main, $alpha: -0.4);
 }
 
 .cat-devjournal {
-    background-color: transparentize($color: $red-main, $amount: .4);
+    background-color: color.adjust($color: $red-main, $alpha: -0.4);
 }
 
 .cat-personal {
-    background-color: transparentize($color: $green-main, $amount: .4);
+    background-color: color.adjust($color: $green-main, $alpha: -0.4);
 }
 
 .cat-review {
-    background-color: transparentize($color: $yellow-main, $amount: .4);
+    background-color: color.adjust($color: $yellow-main, $alpha: -0.4);
 }

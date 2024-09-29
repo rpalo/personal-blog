@@ -57,7 +57,7 @@
 
   &:hover {
     font-size: 24px;
-    background-color: lighten($yellow-main, 10%);
+    background-color: color.adjust($yellow-main, $lightness: 10%);
   }
 }
 

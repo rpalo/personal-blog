@@ -7,7 +7,7 @@ standalone: true
 
 ## Get In Touch!
 
-Hi!  My name is Ryan Palo.  I'm a mechanical engineer in the Sacramento, CA area.  Here's how to get in touch with me:
+Hi!  My name is Ryan Palo.  I'm a software engineer in the Sacramento, CA area.  I work for [Flashpoint](https://flashpoint.io)[^1].  Here's how to get in touch with me:
 
 The quickest, easiest, most reliable way is definitely email.  You can reach me at hello@assertnotmagic.com or ryan@thepalos.com.
 
@@ -30,14 +30,12 @@ My DM's are open on Twitter, LinkedIn, and DEV!
 
 ## About Me
 
-I'm a mechanical engineer and tool designer.  Mostly molds for injection molding medical devices.  It's pretty cool!  I'm also the quality manager and tooling project manager.
+I'm currently a senior software engineer at Flashpoint, working on the data collection team.  Before that, I was a mechanical engineer, tool designer, quality manager, and project manager at ProtoQuick, a medical injection molding company.
 
-I love to code (hence: blog).  Python, Ruby, Bash, and Rust mostly.  And dabbling in a bunch of other stuff.
+I love to code!  Python, Rust, and Go mostly.  And dabbling in a bunch of other stuff.
 
-I've got my Master's in Computer Science with a focus on intelligent systems: data science, AI, robotics, and security/forensics.  My thesis was building a AI scheduler for molding jobs at my current company, effectively solving a domain-specific version of the Job Shop Problem, and it worked out really well!  Write up/link to project coming soon.
+I've got my Master's in Computer Science with a focus on intelligent systems: data science, AI, robotics, and security/forensics.  My thesis was building a AI scheduler for molding jobs at my current company, effectively solving a domain-specific version of the Job Shop Problem, and it worked out really well!
 
-I'm actively searching for my first dev job.  [Here's a copy of my dev resume.](/6-21-resume.pdf)  I think I'd do best at a back-end, SysDevOps, SRE, documentation, or internal tooling position.  I *am* a toolmaker, after all.  Preferably with lots of mentorship.
+I'm always open to possible new work and contract work (both software and mechanical design).  Here are copies of my [software resume](/resume/software) and my [mechanical resume](/resume/mechanical).  I prefer back-end, Sys/Dev Ops, SRE, or other server related work.  I *am* a toolmaker, after all.  That being said, I also really enjoy front-end development.  As long as there's plenty of opportunity to learn and grow.  Remote or Sacramento area preferred.
 
-That being said, I'm really open to anything and I'm confident that I'd be productive and a great hire for pretty much any position and language.  I love learning new things, so I'm always excited to dig into a new language or framework.  
-
-Remote or Sacramento area preferred.
+[^1]: I do not speak/write on behalf of Flashpoint.  All opinions and ideas on this site are mine alone.
