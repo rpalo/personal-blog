@@ -1,28 +1,31 @@
+@use 'variables';
+@use 'sass:color';
+
 .category-label {
-    display: inline-block;
-    width: 20%;
-    padding: 0 5px;
-    text-align: center;
-    font-size: .8em;
+  display: inline-block;
+  width: 20%;
+  padding: 0 5px;
+  text-align: center;
+  font-size: .8em;
 }
 
 .cat-tech {
-    background-color: color.adjust($color: $blue-dark, $alpha: -0.4);
-    color: $white;
+  background-color: color.adjust($color: variables.$blue-dark, $alpha: -0.4);
+  color: variables.$white;
 }
 
 .cat-watercooler {
-    background-color: color.adjust($color: $blue-main, $alpha: -0.4);
+  background-color: color.adjust($color: variables.$blue-main, $alpha: -0.4);
 }
 
 .cat-devjournal {
-    background-color: color.adjust($color: $red-main, $alpha: -0.4);
+  background-color: color.adjust($color: variables.$red-main, $alpha: -0.4);
 }
 
 .cat-personal {
-    background-color: color.adjust($color: $green-main, $alpha: -0.4);
+  background-color: color.adjust($color: variables.$green-main, $alpha: -0.4);
 }
 
 .cat-review {
-    background-color: color.adjust($color: $yellow-main, $alpha: -0.4);
+  background-color: color.adjust($color: variables.$yellow-main, $alpha: -0.4);
 }

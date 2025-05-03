@@ -4,7 +4,6 @@ description: > # this means to ignore newlines until "baseurl:"
   Programming blog by Ryan Palo.  Code is not magic, and anyone can do it.  Python, Ruby, JavaScript, shell scripting, systems, the web, and more!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://assertnotmagic.com" # the base hostname & protocol for your site
-twitter_username: paytastic
 github_username:  rpalo
 permalink: pretty
 source: src
@@ -51,7 +50,6 @@ exclude: [
 
 # Gems
 plugins:
-- jekyll-autoprefixer
 - jekyll-sitemap
 
 # Asciidoc

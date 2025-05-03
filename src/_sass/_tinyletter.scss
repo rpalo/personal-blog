@@ -1,19 +1,35 @@
-@import 'variables';
+@use 'variables';
+@use 'sass:color';
 
 @keyframes wiggle {
-  0% { transform: rotate(0deg); }
-  2% { transform: rotate(5deg); }
-  7% { transform: rotate(-5deg); }
-  10% { transform: rotate(0deg); }
-  100% { transform: rotate(0deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  2% {
+    transform: rotate(5deg);
+  }
+
+  7% {
+    transform: rotate(-5deg);
+  }
+
+  10% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .email-background {
   width: 100%;
-  background-color: $blue-main;
-  box-shadow: 5px 5px 0 0 $grey;
+  background-color: variables.$blue-main;
+  box-shadow: 5px 5px 0 0 variables.$grey;
   padding: 50px;
   margin: 40px auto;
+
   @media (max-width: 800px) {
     padding: 50px 10px;
   }
@@ -32,11 +48,12 @@
 .email-input {
   font-size: 20px;
   width: 50%;
+
   @media (max-width: 800px) {
     width: 95%;
     display: block;
     margin: 20px auto;
-    border: 1px solid $grey;
+    border: 1px solid variables.$grey;
   }
 }
 
@@ -44,24 +61,25 @@
   font-size: 20px;
   padding: 10px;
   border: none;
-  background-color: $yellow-main;
-  color: $black;
+  background-color: variables.$yellow-main;
+  color: variables.$black;
   border-radius: 3px;
   cursor: pointer;
   transition: .5s;
   transform: rotate(0deg);
   animation: wiggle 5s ease-in-out 5s infinite;
+
   @media (max-width: 800px) {
     animation: none;
   }
 
   &:hover {
     font-size: 24px;
-    background-color: color.adjust($yellow-main, $lightness: 10%);
+    background-color: color.adjust(variables.$yellow-main, $lightness: 10%);
   }
 }
 
 .email-powered {
   font-size: 10px;
-  color: $grey;
+  color: variables.$grey;
 }

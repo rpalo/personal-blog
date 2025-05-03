@@ -1,99 +1,108 @@
 ---
 ---
-@charset "utf-8";
-@import 'variables';
+@use 'variables';
+@use 'sass:color';
 
 
 /* Navigation (Fancy) */
 header {
-    text-align: center;
-    height: 100vh;
-    background: radial-gradient(#020509, #020509 90%, #222 );
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+  text-align: center;
+  height: 100vh;
+  background: radial-gradient(#020509, #020509 90%, #222);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 
-    @keyframes bounce {
-        0% { transform: translate(-20px, 0px); }
-        50% { transform: translate(-20px, -20px); }
-        100% { tranform: translate(-20px, 0px); }
+  @keyframes bounce {
+    0% {
+      transform: translate(-20px, 0px);
     }
 
-    .down-arrow {
-        position: absolute;
-        bottom: 10px;
-        left: 50%;
-        transform: translate(-20px, 0px);
-        width: 40px;
-        height: 20px;
-        animation: bounce 2s infinite;
-        cursor: pointer;
+    50% {
+      transform: translate(-20px, -20px);
     }
-    
+
+    100% {
+      tranform: translate(-20px, 0px);
+    }
+  }
+
+  .down-arrow {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-20px, 0px);
+    width: 40px;
+    height: 20px;
+    animation: bounce 2s infinite;
+    cursor: pointer;
+  }
+
 
 }
 
 
 nav {
-    transition: all 0.5s;
-    position: relative;
+  transition: all 0.5s;
+  position: relative;
 }
 
 // Only occurs on scroll past header
 body.fixed-nav nav {
-    position: fixed;
-    box-shadow: 0 5px 0 rgba(0,0,0,0.1);
+  position: fixed;
+  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 
 li.logo {
-    max-width: 0;
-    transition: all 0.5s;
+  max-width: 0;
+  transition: all 0.5s;
 }
 
 
 .fixed-nav li.logo {
-    max-width: 500px;
+  max-width: 500px;
 }
 
 nav a {
-    display: inline-block;
-    transition: all 0.2s;
+  display: inline-block;
+  transition: all 0.2s;
 }
 
 /* Main Content */
 .site-wrap {
-    margin: 70px auto;
-    padding: 70px 200px;
-    transform: scale(0.99);
-    transition: transform 0.5s;
+  margin: 70px auto;
+  padding: 70px 200px;
+  transform: scale(0.99);
+  transition: transform 0.5s;
 }
 
 
 
 // Activates on scroll past header
 body.fixed-nav .site-wrap {
-    transform: scale(1);
+  transform: scale(1);
 }
 
 #home-footer {
-    display: flex;
+  display: flex;
 }
 
 #left-home-footer {
-    flex: 1;
+  flex: 1;
 }
 
 #center-home-footer {
-    flex: 1;
+  flex: 1;
 }
 
 #right-home-footer {
-    flex: 1;
-    p {
-        line-height: 1.7em;
-    }
+  flex: 1;
+
+  p {
+    line-height: 1.7em;
+  }
 }

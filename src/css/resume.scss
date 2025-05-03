@@ -1,9 +1,9 @@
 ---
 ---
-@use "sass:color";
+@use 'sass:color';
+@use 'variables';
 @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700|Patrick+Hand+SC');
 
-@import 'variables';
 
 
 
@@ -16,15 +16,15 @@ body {
 h1 {
   font-family: 'Patrick Hand SC';
   font-size: 48px;
-  border-bottom: 3px solid $blue-main;
+  border-bottom: 3px solid variables.$blue-main;
   line-height: 1em;
 
   &::before {
     content: '#        ';
-    color: color.adjust($blue-main, $alpha: -0.5);
+    color: color.adjust(variables.$blue-main, $alpha: -0.5);
     margin-left: -30px;
   }
-  
+
   @media screen and (max-width: 700px) {
     font-size: 36px;
     text-align: center;
@@ -34,7 +34,7 @@ h1 {
 h2 {
   &::before {
     content: '##      ';
-    color: color.adjust($color: $red-main, $alpha: -0.5);
+    color: color.adjust($color: variables.$red-main, $alpha: -0.5);
     margin-left: -40px;
   }
 
@@ -46,7 +46,7 @@ h2 {
 h3 {
   &::before {
     content: "###      ";
-    color: color.adjust($color: $yellow-main, $alpha: -0.5);
+    color: color.adjust($color: variables.$yellow-main, $alpha: -0.5);
     margin-left: -40px;
   }
 
@@ -106,7 +106,7 @@ aside div {
 
 // Links
 a {
-  color: $red-main;
+  color: variables.$red-main;
 }
 
 // Custom class styling
@@ -119,16 +119,16 @@ a {
 }
 
 .links-box {
-  border: 3px solid $red-main;
+  border: 3px solid variables.$red-main;
   padding-left: 50px;
 }
 
 .programming-box {
-  border: 3px solid $blue-main;
+  border: 3px solid variables.$blue-main;
   padding: 10px;
 
   h4 {
-    border-bottom: 1px solid $black;
+    border-bottom: 1px solid variables.$black;
   }
 }
 
