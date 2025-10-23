@@ -2,11 +2,9 @@
 layout: page
 ---
 
-<h1>{{ page.tag | capitalize }}</h1>
-
-<ul>
+<ul style="padding-left: 0">
     {% for post in site.tags[page.tag] %}
-    <li class="post">
+    <li class="post" style="list-style-type: none;">
         {% include post.html post=post %}
     </li>
     {% endfor %}

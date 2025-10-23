@@ -75,15 +75,15 @@ nav li {
     background-color: variables.$red-main;
 
     a {
-      color: variables.$black
+      color: variables.$black;
     }
   }
 
   &:nth-child(6) {
-    background-color: variables.$white;
+    background-color: variables.$green-main;
 
     a {
-      color: variables.$black
+      color: variables.$white;
     }
   }
 }
