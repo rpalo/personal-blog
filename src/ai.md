@@ -24,38 +24,38 @@ my AI usage.
 ## Coding
 
 I do use AI to aid in my day-to-day job writing code and building software.
-Specifically, I use it in my editor, mostly via tab completion, which is usually
-quite good, pretty close to what I was going to type anyway, and saves me some
-button pushing. Both cursor (using Gemini, Claude, and a few others) and Copilot
-have actually been a delight to use, causing me at various times to go, "Oh heck
-yeah," when they have a particularly good guess about what my intentions were.
+Specifically, I use it in my editor, mostly via tab completion. I find the tab
+completion is usually quite good, it's often pretty close to what I was going to
+type anyway, and it saves me some button pushing. Gemini, Claude, Copilot and a
+few others have actually been a delight to use, causing me to go, "Oh heck yeah"
+when they have a particularly good guess about what my intentions were.
 
-So far, I haven't found any models or settings that make it make sense for me to
-use the agent/chat modes for code generation more than the smallest or most
-menial tasks. In general, I find that it tends to write mostly code that's
-ok-ish with frequent junior-developer-like issues that I end up having to tweak,
-rewrite, or scrap altogether. Sometimes, I've found it to be plain wrong. Couple
-that frustration with the fact that the act of actually writing code is one of
-my favorite things about my job and I pride myself on doing a good job at it,
-and there (so far) hasn't been a super compelling reason to lean on the chat
-agent more.
+So far, I haven't found any models or settings that have been workable for using
+the agent/chat modes for code generation more than the smallest or most menial
+tasks. In general, I find that it tends to write mostly code that's ok-ish with
+frequent junior-developer-like issues that I end up having to tweak, rewrite, or
+scrap altogether. Sometimes, I've found it to be plain wrong. And that's
+frustrating. Additionally, the act of actually writing code is one of my
+favorite things about my job, and I pride myself on doing a good job at it.
+There (so far) hasn't been a super compelling reason to lean on the chat agent
+more.
 
 ## Learning
 
-I do use AI to augment my quick searching and research, specifically on quick
-questions that I know there is a concrete answer for, as well as more vague
-questions like, "How does this look. Is it idiomatic Go (or whatever)?" The
-important bit is that I use it in situations where I already have a _pretty
-good_ idea of the right answer and I can catch it if it's way off. I don't take
-its word for granted any more than I would a single Stackoverflow answer.
+I do use AI to augment my quick searching and research. I use it for quick
+questions that I know there is a concrete answer for, and more vague questions
+like, "How does this look. Is it idiomatic Go (or whatever)?" The important bit
+is that I use it in situations where I already have a _pretty good_ idea of the
+right answer and I can catch it if it's way off. I don't take its word for
+granted any more than I would a single Stackoverflow answer.
 
 ## Writing
 
 I don't use AI to help me write. Ever. Every word on this blog or anywhere else
 you find my words is 100% my own words. I like that my writing has my voice in
-it, manually writing things out helps me process, learn, and synthesize it into
-the rest of the things I already know, and I don't see any reason that I should
-let the robits sap the joy that the act of writing brings me.
+it. Manually writing things out helps me process ideas and learn. So, I don't
+see any reason that I should let the robits sap the joy that the act of writing
+brings me.
 
 ## Summarizing
 
