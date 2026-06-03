@@ -1,0 +1,24 @@
+# Beginner to Intermediate Python
+
+> These articles would be good reads for those looking to upskill their Python
+and write more idiomatic code.
+
+Below are several recommended posts, but you can also explore all of my Python
+posts on the [Python tag page](/tags/python/).
+
+## Recommended Posts
+
+- [Teaching Indexing Better](/2017/04/12/indexing-teaching-better/)
+- [Binary Operations](/2019/03/21/binary-operations/)
+- [3 Common Mistakes that Python Newbies Make](/2018/08/04/3-python-newbie-mistakes/)
+- Unwrapping Decorators
+    - [Part 1](/2017/05/30/unwrapping-decorators-1/)
+    - [Part 2](/2017/06/05/unwrapping-decorators-2/)
+- [Closure?  I Hardly Know Her!](/2018/02/10/closure-i-hardly-know-her/)
+- Python Scripting Toolbox: Handy tools needed to write solid Python scripts
+    - [Part 1](/2018/06/05/python-toolbox-shout/): `sys` and `fileinput`
+    - [Part 2](/2018/06/16/python-toolbox-make-script/): string templates and `argparse`
+- [DefaultDicts](/2018/11/18/defaultdicts/): An overview of how to use this handy standard library class
+- [Each Pair with Itertools](/2018/06/09/itertools-each-pair/)
+- [Python's random.choices is Awesome](/2019/03/26/python-random-choices/)
+- [Giving Meaning to Magic Numbers with Python Enums](/2019/03/13/enums-magic-numbers-python/)

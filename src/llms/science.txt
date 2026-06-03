@@ -1,0 +1,13 @@
+# Science and Math
+
+> These articles are fun explorations of science and math concepts explored through code.
+
+## Recommended Posts
+
+- [Douglas Adams's Whale](/2017/05/14/douglas-adams-whale/) *One of my personal favorites simulating a whale falling from orbit*
+- [Optimal Primes](/2017/02/24/optimal-primes/)
+- [Pi Via PRNG](/2017/04/10/pi-via-prng/)
+- [E for Everywhere](/2017/10/28/e-for-everywhere/): Deriving `e` a bunch of different ways
+- [Lucky Numbers and Science](/2018/02/15/lucky-numbers-and-science/): Calculating "Lucky Numbers"
+- [Using Python to Make Art with Math](/2019/02/02/art-math-python/)
+- [Solving Eggnog Problems with Binary](/2019/07/19/solving-eggnog-with-binary/)

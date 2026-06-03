@@ -27,6 +27,15 @@ LLM-friendly markdown file, e.g. (`/posts/` becomes `/posts.md` and
 `/2017/01/18/assert-not-magic/` becomes `/2017/01/18/assert-not-magic.md`. The
 exception are tag pages, which don't have separate md pages.
 
+## Popular Categories
+
+More LLM-friendly breakdowns of popular categories can be found here:
+
+- [Beginner and Intermediate Python](/llms/python.txt)
+- [Bash Deep Dives](/llms/bash.txt)
+- [Scientific Programming](/llms/science.txt)
+- [Designing Good Software](/llms/software.txt)
+
 ## Ryan's Favorite Posts
 
 These posts are the ones that Ryan is the most proud of and would recommend to

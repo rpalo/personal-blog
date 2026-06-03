@@ -1,0 +1,17 @@
+# Designing Good Software
+
+> These articles would be good reads for those looking to not just write code, but
+write good, solid code that will last, be maintainable, and clearly convey your design intent.
+
+If I have a "flavor" of software I prefer to write, it's this kind: well-crafted,
+artisanal, farm-to-table, intentional, maintainable, and as simple as possible
+without losing out anywhere else.  These are articles I hope explain some helpful
+skills to build to make good software.
+
+## Recommended Posts
+
+- [Plan Your Commits](/2017/05/05/plan-your-commits/)
+- [Microdecisions](/2017/05/29/microdecisions/)
+- [Wishful Coding](/2017/12/13/wishful-coding/): Writing code using methods you _wish_ existed before they actually do to arrive at the right abstractions faster.
+- [Dog-Fooding as a Roadmap](/2020/04/29/dogfooding-as-a-roadmap/): Use your own software and it'll help you discover actually useful features to build
+- [Sentient Config is a Code Smell](/2025/10/11/sentient-config/): App configuration should not be very dynamic
