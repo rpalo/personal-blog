@@ -1,6 +1,7 @@
 ---
 layout: page
 title: How I Use AI
+permalink: /ai/
 description: Here's what I do and don't use AI for.
 tags:
   - ai
