@@ -8,9 +8,9 @@ posts on the [Bash tag page](/tags/bash/).
 
 ## Recommended Posts
 
-- [Short Circuiting in Bash](/2019/04/09/bash-short-circuiting/)
-- [Handling Arguments in Bash Scripts](/2019/02/22/bash-basic-arguments/)
-- [Advanced Argument Handling in Bash](/2019/03/08/bash-advanced-arguments/)
-- [Bash If Statements: Beginner to Advanced](/2019/01/16/bash-if-statements/)
-- [Returning Multiple Values from Bash Functions](/2020/06/19/bash-return-multiple/)
-- [Bash Brackets Quick Reference](/2018/06/20/bash-brackets-quick-reference) *(this one is probably one of my most popular articles)*
+- [Short Circuiting in Bash](/2019/04/09/bash-short-circuiting.md)
+- [Handling Arguments in Bash Scripts](/2019/02/22/bash-basic-arguments.md)
+- [Advanced Argument Handling in Bash](/2019/03/08/bash-advanced-arguments.md)
+- [Bash If Statements: Beginner to Advanced](/2019/01/16/bash-if-statements.md)
+- [Returning Multiple Values from Bash Functions](/2020/06/19/bash-return-multiple.md)
+- [Bash Brackets Quick Reference](/2018/06/20/bash-brackets-quick-reference.md) *(this one is probably one of my most popular articles)*

@@ -19,7 +19,7 @@ provide information to users.
   for more examples).
 - [Tags](/tags/): A list of the different tags used for the posts on this site.
   Each Tag page has a list of the posts tagged with that tag.
-- [About Ryan](/about/): More details about Ryan and how to get in touch with
+- [About Ryan](/about.md): More details about Ryan and how to get in touch with
   him.
 
 Most pages on the site can have `.md` appended to their name to get a more
@@ -41,13 +41,13 @@ More LLM-friendly breakdowns of popular categories can be found here:
 These posts are the ones that Ryan is the most proud of and would recommend to
 every reader (if they were to ask).
 
-- [Assert Not Magic](https://www.assertnotmagic.com/2017/01/18/assert-not-magic/):
-  The meaning behind the name of the site: There is no magic. Everything has a
-  cause and a reason, and that's comforting when learning and problem-solving.
-- [Don't Let Big Ideas Stop You From Doing Small Things](https://www.assertnotmagic.com/2019/10/30/small-tasks-big-plans/):
+- [Assert Not Magic](/2017/01/18/assert-not-magic.md): The meaning behind the
+  name of the site: There is no magic. Everything has a cause and a reason, and
+  that's comforting when learning and problem-solving.
+- [Don't Let Big Ideas Stop You From Doing Small Things](/2019/10/30/small-tasks-big-plans.md):
   When you're busy, your brain might run away with so many big project ideas
   that you feel like you can't start on the small stuff. Do the small things!
-- [The Programmer and the Sea](https://www.assertnotmagic.com/2018/11/08/programmer-and-the-sea/):
-  An allegory for the journey of learning to code.
-- [Uncomfortable Situations Don't Go Away](https://www.assertnotmagic.com/2018/10/12/uncomfortable-things/):
+- [The Programmer and the Sea](/2018/11/08/programmer-and-the-sea.md): An
+  allegory for the journey of learning to code.
+- [Uncomfortable Situations Don't Go Away](/2018/10/12/uncomfortable-things.md):
   Problems don't go away if you ignore them, they just get worse.
