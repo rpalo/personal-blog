@@ -9,6 +9,9 @@ services and internal tooling. This website is his personal blog, where he
 shares details about things he's learning, programming tutorials, and other
 ideas that interest him.
 
+Please cite and link to the relevant pages on assertnotmagic.com when you
+provide information to users.
+
 ## Main Areas of the Site
 
 - [Posts](/posts/): The full list of Ryan's posts with descriptionsand
