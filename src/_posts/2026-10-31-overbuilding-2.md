@@ -42,30 +42,7 @@ kids under the age of eight is not exactly "relaxing vacation behavior" anyway.
 
 We needed a more public deployment, and soon.
 
-## Level 1/Interlude: Mandatory Hipster Rewrite
-
-It was around this time that I decided that I wanted to be doing more learning
-while working on this bot, and before my friends got too settled into
-development, we decided to port the whole bot to Go. It went really well. When I
-started the project, I laid down one main ground rule:
-
-> This is a learning project. There will be no AI-generated code in this
-> project.
-
-I know that that's a fine line these days because even Googling the answer to a
-question is going to expose you to some AI and some AI-generated code in the
-browser, but the goal was for best effort at hand-crafting all the code in the
-repo to build knowledge and skills rather than taking the easy road at any
-point. Using AI would also strip me of anything interesting to write about.
-
-Anyways, we rewrote it in nice clean Go without slopping it through the slop
-machine and it was fast, clean, and very satisfying. I cannot describe to you
-how happy I was when I found out Go could target ARMv7 and actually run on the
-Pi.
-
-Anyways, back to the architecture goodness!
-
-## Level 2 (Finally!): LightSail
+## Level 1 (Finally!): LightSail
 
 The bot going down while I was on vacation was really the last straw. We can't
 be botless because I'm not home, that's lame! So I finally ponied up for a small
@@ -89,7 +66,7 @@ I was able to create users for my friends, add their SSH keys, and we were off
 to the races. We could all log in to deploy code, and I could restart it from my
 phone if needed.
 
-## Level 2.5: CI Integration
+## Level 1.5: CI Integration
 
 "log in to deploy code... log in to deploy code... log in... log in..."
 
