@@ -1,6 +1,12 @@
 ---
+layout: page
 title: "Overbuilding Part 2: Sharing is Caring"
 description: My friends want to join in on the Discord bot development, and a local repo, an old Pi, and build scripts just aren't going to cut it anymore.
+tags:
+  - architecture
+  - go
+  - aws
+  - lightsail
 ---
 
 This is Part 2 in a multi-part series on overbuilding and overarchitecting a
